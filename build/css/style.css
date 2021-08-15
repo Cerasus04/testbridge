@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url("../fonts/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro-Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Black.woff2") format("woff2"), url("../fonts/SFUIDisplay-Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "SF UI Display", "Arial", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 41px; }
+
+.btn--light {
+  color: #1B1B1B;
+  background-color: #FFFFFF;
+  border: 1px solid #7C7571; }
+
+.btn--transparent {
+  color: #A1A1A1;
+  background-color: transparent;
+  border: 1px solid #7C7571; }
+
+.btn--accent {
+  color: #000000;
+  background: linear-gradient(52.76deg, #FF9A10 18.82%, #FF9519 77.36%);
+  -webkit-box-shadow: 0px 3px 15px rgba(255, 151, 10, 0.41);
+          box-shadow: 0px 3px 15px rgba(255, 151, 10, 0.41); }
+
+.link {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #FFFFFF; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+button {
+  border: none;
+  background: transparent;
+  outline: 1px solid red; }
+
+.accent-color {
+  color: #FF970A; }
+
+.page {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr -webkit-min-content;
+  grid-template-rows: 1fr min-content;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "SF UI Display", "Arial", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  word-wrap: normal;
+  color: #FFFFFF;
+  background-color: #000000; }
+  @media (min-width: 768px) {
+    .page {
+      font-size: 15px; } }
+
+.header__logo {
+  width: 28px;
+  height: 41px; }
+  @media (min-width: 768px) {
+    .header__logo {
+      width: 164px;
+      height: 62px; } }
+
+.header__logo-dt {
+  display: none; }
+  @media (min-width: 768px) {
+    .header__logo-dt {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .header__logo-mb {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .header__right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+.header__nav {
+  display: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 14.93px;
+  text-transform: uppercase; }
+  @media (min-width: 1024px) {
+    .header__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.header__item {
+  margin-right: 40px; }
+
+.header__btn {
+  display: none; }
+  @media (min-width: 1024px) {
+    .header__btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 211px;
+      height: 49px;
+      padding: 18px 25px;
+      letter-spacing: 0.08em;
+      text-align: center;
+      color: #FF970A; } }
+
+.header__btn-mb {
+  display: block;
+  width: 33px;
+  height: 11px; }
+  @media (min-width: 1024px) {
+    .header__btn-mb {
+      display: none; } }

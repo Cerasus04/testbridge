@@ -1,0 +1,72 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: $font-family;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 41px;
+}
+
+.btn--light {
+  color: $btn-light;
+  background-color: $white;
+  border: 1px solid $border;
+}
+
+.btn--transparent {
+  color: $btn-transparrent;
+  background-color: transparent;
+  border: 1px solid $border;
+}
+
+.btn--accent {
+  color: $black;
+  background: linear-gradient(52.76deg, #FF9A10 18.82%, #FF9519 77.36%);
+  box-shadow: 0px 3px 15px rgba(255, 151, 10, 0.41);
+
+  &:hover,
+  &:focus {
+    // color: $white;
+    // background-color: $sky;
+  }
+
+  &:active {
+    // color: rgba($white, 0.3);
+    // background-color: $sky;
+  }
+}
+
+.link {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    // color: $sky;
+  }
+
+  &:active {
+    // color: rgba($sky, 0.3);
+  }
+}
+
+ul {
+  @include ul-reset;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: 1px solid red;
+}
+
+.accent-color {
+  color: $accent;
+}
