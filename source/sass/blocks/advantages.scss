@@ -1,0 +1,58 @@
+.advantages {
+}
+.advantages__wrapper {
+}
+.advantages__text-main {
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 104px;
+    line-height: 104px;
+  }
+}
+.advantages__text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  color: $text-light;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.advantages__period {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+.adventages__result {
+}
+.advantages__sum {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 53px;
+  }
+}
+
+.advantages__paid {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}

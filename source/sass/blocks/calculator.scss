@@ -1,0 +1,43 @@
+.calculator {
+  & h2 {
+    @include title;
+  }
+}
+.calculator__form {
+}
+.calculator__result {
+  background-color: $black;
+}
+.calculator__btn {
+}
+.calculator__feadback {
+}
+.calculator__result-title {
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+.calculator__result-sum {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 41px;
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.calculator__result-text {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 31px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 43px;
+    line-height: 43px;
+  }
+}

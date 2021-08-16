@@ -72,7 +72,7 @@
         <button class="promo__control"></button>
         <button class="promo__control&quot;"></button>
       </div>
-      <h2>Пассивный доход до <span class="accent-color">20%</span> годовых на инвестициях в недвижимость.</h2>
+      <h2 class="promo__title">Пассивный доход до <span class="accent-color">20%</span> годовых на инвестициях в недвижимость.</h2>
       <div class="promo__social-panel social">
         <a class="social__link link" href="#" aria-label="ссылка на Youtube">
           <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@
     </section>
     <section class="main__advantages advantages" id="advantages">
       <div class="advantages__wrapper">
-        <p class="advantages__text-sum">38 469 800 &#x20bd;</p>
+        <p class="advantages__text-main">38 469 800 &#x20bd;</p>
         <p class="advantages__text">
           Заработали наши инвесторы на рынке недвижимости
         </p>
@@ -123,15 +123,15 @@
         <div class="adventages__result">
           <p>
             <span class="advantages__sum">1М</span>
-            <span>Выплачено инвесторам</span>
+            <span class="advantages__paid">Выплачено инвесторам</span>
           </p>
           <p>
             <span class="advantages__sum">56,7K</span>
-            <span>Выплачено партнерам</span>
+            <span class="advantages__paid">Выплачено партнерам</span>
           </p>
           <p>
             <span class="advantages__sum accent-color">289,1М</span>
-            <span>Текщий рамер портфеля</span>
+            <span class="advantages__paid">Текщий рамер портфеля</span>
           </p>
         </div>
       </div>
@@ -141,81 +141,82 @@
       <div class="options__wrapper">
         <div class="options__container">
           <h3>Доверительное управление (ДУ) </h3>
-          <ul>
-            <li>Условия</li>
-            <li>Преимущества</li>
-            <li>Ограничения</li>
-            <li>Шаблон договора</li>
+          <ul class="options__list">
+            <li class="options__item options__item--active">Условия</li>
+            <li class="options__item">Преимущества</li>
+            <li class="options__item">Ограничения</li>
+            <li class="options__item">Шаблон договора</li>
           </ul>
           <h4>Как это работает?</h4>
-          <p>Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
-          <div class="options__detals">
-            <div class="control-income">
-              <p>Доход:</p>
-              <p>
-                <span class="control-income__percent">12%</span>
-                <span>годовых</span>
+          <p class="options__description">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
+          <div class="options__detals detals-control">
+            <div class="detals-control__income">
+              <p class="detals-control__title">Доход:</p>
+              <p class="detals-control__text">
+                <span class="detals-control__percent">12%</span>
+                <span class="detals-control__sub-text">годовых</span>
               </p>
-              <p>
-                <span class="control-income__percent">14%</span>
-                <span>годовых</span>
+              <p class="detals-control__text">
+                <span class="detals-control__percent">14%</span>
+                <span class="detals-control__sub-text">годовых</span>
               </p>
-              <p>
-                <span class="control-income__percent">16%</span>
-                <span>годовых</span>
+              <p class="detals-control__text">
+                <span class="detals-control__percent">16%</span>
+                <span class="detals-control__sub-text">годовых</span>
               </p>
-              <p>
-                <span class="control-income__percent">18%</span>
-                <span>годовых</span>
+              <p class="detals-control__text">
+                <span class="detals-control__percent">18%</span>
+                <span class="detals-control__sub-text">годовых</span>
               </p>
             </div>
-            <div class="control-contribution">
-              <p>Вклад:</p>
-              <p>
+            <div class="detals-control__contribution">
+              <p class="detals-control__title">Вклад:</p>
+              <p class="detals-control__text">
                 <span>от 100 тыс</span>
                 <span>до 249 тыс</span>
               </p>
-              <p>
+              <p class="detals-control__text">
                 <span>от 250тыс</span>
                 <span>до 499тыс</span>
               </p>
-              <p>
+              <p class="detals-control__text">
                 <span>от 500 тыс</span>
                 <span>до 1 млн</span>
               </p>
-              <p>
+              <p class="detals-control__text">
                 <span>от 1 млн</span>
               </p>
             </div>
-            <a class="link btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
+            <a class="btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
           </div>
+          <p class="options__signature">Если срок менее 1 года, то доходность уменьшается на 1%</p>
         </div>
         <div class="options__container">
           <h3>Финансирование Сделки (ФС)</h3>
-          <ul>
-            <li>Условия</li>
-            <li>Доступные лоты</li>
-            <li>Преимущества</li>
-            <li>Ограничения</li>
-            <li>Шаблон договора</li>
+          <ul class="options__list">
+            <li class="options__item options__item--active">Условия</li>
+            <li class="options__item">Доступные лоты</li>
+            <li class="options__item">Преимущества</li>
+            <li class="options__item">Ограничения</li>
+            <li class="options__item">Шаблон договора</li>
           </ul>
           <h4>Как это работает?</h4>
-          <p>Вид финансирования, при котором один инвестор покрывает всю сумму сделки и становится залогодержателем</p>
-          <div class="options__detals">
-            <div class="deal-income">
-              <p>Доход:</p>
+          <p class="options__description">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и становится залогодержателем</p>
+          <div class="options__detals detals-deal">
+            <div class="detals-deal__income">
+              <p class="detals-deal__title">Доход:</p>
               <p>
-                <span class="deal-income__percent">18-20%%</span>
-                <span>годовых</span>
+                <span class="detals-deal__percent">18-20%</span>
+                <span class="detals-deal__sub-text">годовых</span>
               </p>
             </div>
-            <div class="deal-contribution">
-              <p>Вклад:</p>
-              <p>
+            <div class="detals-deal__contribution">
+              <p class="detals-deal__title">Вклад:</p>
+              <p class="detals-deal__text">
                 <span>от 500 тыс</span>
               </p>
             </div>
-            <a class="link btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
+            <a class="btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
           </div>
         </div>
       </div>
@@ -225,6 +226,7 @@
       <form class="calculator__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <div class="renge-slider">
+            <p class="renge-slider__result">2 050 000 &#x20bd;</p>
             <legend>
               Сумма сбережений
               <label for="min-price" class="visually-hidden">от</label>
@@ -248,11 +250,11 @@
               <ul class="radio__list">
                 <li class="radio__list-item">
                   <input class="visually-hidden" type="radio" name="conditions" value="6monts" id="half-year" checked="checked">
-                  <label for="half-year">6 месяцев</label>
+                  <label class="radio__meaning radio__meaning--active" for="half-year">6 месяцев</label>
                 </li>
                 <li class="radio__list-item">
                   <input class="visually-hidden" type="radio" name="conditions" value="12monts" id="year">
-                  <label for="year">12 месяцев</label>
+                  <label class="radio__meaning" for="year">12 месяцев</label>
                 </li>
               </ul>
             </div>
@@ -261,11 +263,11 @@
               <ul class="radio__list">
                 <li class="radio__list-item">
                   <input class="visually-hidden" type="radio" name="payments" value="end-term" id="end-term" checked="checked">
-                  <label for="end-term">В конце срока</label>
+                  <label class="radio__meaning radio__meaning--active" for="end-term">В конце срока</label>
                 </li>
                 <li class="radio__list-item">
                   <input class="visually-hidden" type="radio" name="payments" value="monthly" id="monthly">
-                  <label for="monthly">Ежемесячно</label>
+                  <label class="radio__meaning" for="monthly">Ежемесячно</label>
                 </li>
               </ul>
             </div>
@@ -274,18 +276,18 @@
       </form>
       <div class="calculator__result">
         <p>
-          <span>Ежемесячное начисление</span>
-          <span>22 208 ₽ </span>
+          <span class="calculator__result-title">Ежемесячное начисление</span>
+          <span class="calculator__result-sum">22 208 ₽ </span>
         </p>
         <p>
-          <span>Доход</span>
-          <span>13%</span>
+          <span class="calculator__result-title">Доход</span>
+          <span class="calculator__result-text">13%</span>
         </p>
         <p>
-          <span>Ежегодное начислениее</span>
-          <span>316 500 ₽</span>
+          <span class="calculator__result-title">Ежегодное начислениее</span>
+          <span class="calculator__result-text">316 500 &#x20bd;</span>
         </p>
-        <a class="calculator__btn link btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
+        <a class="calculator__btn btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
         <a class="calculator__feadback link" aria-label="Получить консультацию">Получить консультацию</a>
       </div>
     </section>
@@ -297,12 +299,12 @@
         <li>Подписываете документы</li>
         <li>Инвестируйте и получаете ежемесячный доход</li>
       </ol>
-      <a class="steps__btn link btn btn--accent" aria-label="Оставить заявку">Оставить заявку</a>
-      <a class="steps__feadback link btn btn--transparent" aria-label="Необходимые документы">Необходимые документы</a>
+      <a class="steps__btn btn btn--accent" aria-label="Оставить заявку">Оставить заявку</a>
+      <a class="steps__feadback btn btn--transparent" aria-label="Необходимые документы">Необходимые документы</a>
     </section>
     <section class="main__review review">
       <h2>Отзывы инвесторов</h2>
-      <a href="#" class="link btn btn--accent" aria-label="Больше отзывов">Больше отзывов</a>
+      <a href="#" class="btn btn--accent" aria-label="Больше отзывов">Больше отзывов</a>
       <div class="review__content">
         <div class="review__wrapper">
           <picture>
@@ -341,7 +343,7 @@
       <div class="review__guarantees">
         <h3>Гарантии</h3>
         <p>Каждая сделка подкреплена залогом в виде ликвидной недвижимости. Ее рыночная стоимость минимум в 2 раза выше суммы инвестиций, что перекрывает риски </p>
-        <a href="#" class="link btn btn--accent" aria-label="Получить консультацию">Получить консультацию</a>
+        <a href="#" class="btn btn--accent" aria-label="Получить консультацию">Получить консультацию</a>
       </div>
     </section>
   </main>
@@ -350,7 +352,7 @@
       <section class="footer__contacts">
       <h2 class="visually-hidden">Блок с контактами</h2>
         <a class="footer__logo link" id="top" aria-label="Логотип биржи">
-          <span class="header__logo-dt">
+          <span>
             <svg width="168" height="64" viewBox="0 0 168 64">
               <use xlink:href="img/sprite.svg#icon-logo-dt"></use>
             </svg>

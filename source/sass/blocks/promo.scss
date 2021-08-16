@@ -1,4 +1,25 @@
 .promo {
+  min-height: 806px;
+  background-image: url("../img/promo-mb.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/promo-dt.jpg");
+  }
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 72px;
+    line-height: 89px;
+  }
 }
 .promo__controls {
 }

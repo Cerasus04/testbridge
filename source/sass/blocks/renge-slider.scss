@@ -1,0 +1,35 @@
+.renge-slider {
+  & legend {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+.renge-slider__result {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+.range-slider__progress {
+}
+.range-slider__controls {
+}
+.range-slider__scale {
+}
+.range-slider__bar {
+}
+.range-slider__min {
+}
+.range-slider__max {
+}

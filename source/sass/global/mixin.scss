@@ -4,14 +4,16 @@
   list-style: none;
 }
 
-@mixin title-desktop {
-  // margin: 0;
-  // font-family: $font-family;
-  // font-size: 36px;
-  // line-height: 140.6%;
-  // font-weight: 400;
-  // letter-spacing: 0;
-  // text-align: left;
+@mixin title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @mixin title-tablet {

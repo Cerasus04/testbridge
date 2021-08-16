@@ -1,0 +1,81 @@
+.options {
+
+  & h2 {
+    @include title;
+  }
+}
+.options__wrapper {
+  & h3 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 27px;
+      line-height: 27px;
+    }
+  }
+  & h4 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      line-height: 14px;
+    }
+  }
+}
+.options__container {
+  background: $bg-wrap;
+  border-radius: 20px;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 18px;
+  }
+}
+.options__detals {
+  background: $black;
+  border-radius: 20px;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 18px;
+  }
+
+}
+.options__list {
+}
+.options__item {
+  font-weight: 400;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-style: 14px;
+    line-height: 15px;
+  }
+
+  &--active {
+    color: $accent;
+    border: 1.5px solid $accent;
+    border-radius: 41px;
+  }
+}
+.options__description {
+  font-weight: 400;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+.options__signature {
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

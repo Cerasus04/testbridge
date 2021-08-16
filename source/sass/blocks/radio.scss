@@ -1,0 +1,31 @@
+.radio {
+}
+.radio__wrapper {
+  & p {
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+.radio__list {
+}
+.radio__list-item {
+}
+.radio__meaning {
+  font-weight: 500;
+  line-height: 12px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  &--active {
+    color: $btn-light;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,23 @@
+.steps {
+  & h2 {
+    @include title;
+  }
+}
+.steps__list {
+  & li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+.steps__btn {
+}
+.steps__feadback {
+}
+.btn--transparent {
+}

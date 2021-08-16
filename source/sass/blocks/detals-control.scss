@@ -1,0 +1,29 @@
+.detals-control {
+}
+.detals-control__income {
+}
+.detals-control__percent {
+}
+.detals-control__contribution {
+}
+.detals-control__text {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+.detals-control__percent {
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 33px;
+}
+
+.detals-control__sub-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}

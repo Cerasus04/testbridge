@@ -1,0 +1,64 @@
+.review {
+  & h2 {
+    @include title;
+  }
+}
+
+.review__content {
+}
+.review__wrapper {
+  background-color: $bg-img;
+  border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 18px;
+  }
+
+  & img {
+    border-radius: 10px;
+
+    @media (min-width: $desktop-width) {
+      border-radius: 18px;
+    }
+  }
+}
+
+.review__time {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.25px;
+  background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
+  backdrop-filter: blur(7px);
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+
+}
+.review__title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.review__guarantees {
+  & h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+  }
+}
