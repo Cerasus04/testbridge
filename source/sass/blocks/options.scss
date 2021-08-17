@@ -1,6 +1,4 @@
 .options {
-  position: relative;
-
   width: calc(100% - 30px);
   margin: 0 auto;
 
@@ -11,11 +9,11 @@
 }
 .options__wrapper {
   position: relative;
+  min-height: 285px;
 }
 .options__container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
+
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px;
 
@@ -24,22 +22,10 @@
   }
 
   & h3 {
-    position: absolute;
-    top: -16%;
-    right: 0;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 9px 16px 10px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 13px;
-    text-align: center;
-    z-index: 1;
-
-    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
-    border-radius: 12px 12px 0 0;
+    display: none;
 
     @media (min-width: $desktop-width) {
+      display: block;
       font-size: 27px;
       line-height: 27px;
     }
@@ -49,6 +35,7 @@
     font-size: 11px;
     font-weight: 400;
     line-height: 10px;
+    color: $text-lighter;
 
     @media (min-width: $tablet-width) {
       font-size: 15px;
@@ -57,19 +44,19 @@
   }
 
   &--active {
-    position: relative;
+    display: block;
     background-color: $bg-wrap;
-    z-index: 1;
 
-    & h3 {
-      top: -9.5%;
-      left: 0;
-      background: $bg-wrap;
-      border-radius: 20px 20px 0 0;
-    }
   }
 }
+
+.options__chapter {
+  margin: 0 10px;
+}
 .options__detals {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 27px 0 17px;
   background: $black;
   border-radius: 20px;
 
@@ -79,8 +66,6 @@
 
 }
 .options__list {
-  width: calc(100% - 30px);
-  margin: 0 auto;
   padding-top: 25px;
 }
 .options__item {
@@ -104,6 +89,7 @@
   }
 }
 .options__description {
+  width: 97%;
   font-weight: 400;
   line-height: 19px;
 
@@ -130,5 +116,34 @@
 .options__title-mb {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.options__controls {
+  display: flex;
+}
+.options__control {
+  // position: relative;
+  // top: -16%;
+  // right: 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 9px 16px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: center;
+  z-index: 1;
+color: white;
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+  border-radius: 12px 12px 0 0;
+
+  &--active {
+    & h3 {
+      // top: -9.5%;
+      left: 0;
+      background: $bg-wrap;
+      border-radius: 20px 20px 0 0;
+    }
   }
 }

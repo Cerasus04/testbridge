@@ -69,9 +69,9 @@
     <section class="main__promo promo">
       <div class="promo__wrapper">
         <div class="promo__controls">
-          <button class="promo__control promo__control--play"></button>
-          <button class="promo__control promo__control--screen"></button>
-          <button class="promo__control promo__control--volume"></button>
+          <button type="button" class="promo__control promo__control--play"></button>
+          <button type="button" class="promo__control promo__control--screen"></button>
+          <button type="button" class="promo__control promo__control--volume"></button>
         </div>
         <h2 class="promo__title">Пассивный доход до <span class="accent-color">20%</span> годовых на инвестициях в недвижимость.</h2>
         <div class="promo__social-panel social">
@@ -141,85 +141,102 @@
     <section class="main__options options">
       <h2>Варианты инвестирования</h2>
       <div class="options__wrapper">
+        <!-- <div class="options__controls">
+          <button type="button" class="options__control options_control--active">Доверительное управление (ДУ)</button>
+          <button type="button" class="options__control">Финансирование конкретной сделки</button>
+        </div> -->
         <div class="options__container options__container--active">
-          <h3>Доверительное управление (ДУ) </h3>
-          <ul class="options__list">
-            <li class="options__item options__item--active">Условия</li>
-            <li class="options__item">Преимущества</li>
-            <li class="options__item">Ограничения</li>
-            <li class="options__item">Шаблон договора</li>
-          </ul>
-          <h4>Как это работает?</h4>
-          <p class="options__description">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
-          <div class="options__detals detals-control">
-            <div class="detals-control__income">
-              <p class="detals-control__title">Доход:</p>
-              <p class="detals-control__text">
-                <span class="detals-control__percent">12%</span>
-                <span class="detals-control__sub-text">годовых</span>
-              </p>
-              <p class="detals-control__text">
-                <span class="detals-control__percent">14%</span>
-                <span class="detals-control__sub-text">годовых</span>
-              </p>
-              <p class="detals-control__text">
-                <span class="detals-control__percent">16%</span>
-                <span class="detals-control__sub-text">годовых</span>
-              </p>
-              <p class="detals-control__text">
-                <span class="detals-control__percent">18%</span>
-                <span class="detals-control__sub-text">годовых</span>
-              </p>
+          <div class="options__chapter">
+            <h3>Доверительное управление (ДУ)</h3>
+            <ul class="options__list">
+              <li class="options__item options__item--active">Условия</li>
+              <li class="options__item">Преимущества</li>
+              <li class="options__item">Ограничения</li>
+              <li class="options__item">Шаблон договора</li>
+            </ul>
+            <h4>Как это работает?</h4>
+            <p class="options__description">Вы инвестируете деньги, мы вкладываем их в выгодные сделки</p>
+            <div class="options__detals detals-control">
+              <div class="detals-control__income">
+                <p class="detals-control__title">Доход:</p>
+                <p class="detals-control__text">
+                  <span class="detals-control__percent">12%</span>
+                  <span class="detals-control__sub-text">годовых</span>
+                </p>
+                <p class="detals-control__text">
+                  <span class="detals-control__percent">14%</span>
+                  <span class="detals-control__sub-text">годовых</span>
+                </p>
+                <p class="detals-control__text">
+                  <span class="detals-control__percent">16%</span>
+                  <span class="detals-control__sub-text">годовых</span>
+                </p>
+                <p class="detals-control__text">
+                  <span class="detals-control__percent">18%</span>
+                  <span class="detals-control__sub-text">годовых</span>
+                </p>
+              </div>
+              <div class="detals-control__contribution">
+                <p class="detals-control__title">Вклад:</p>
+                <p class="detals-control__text detals-control__text--dt">
+                  <span>от 100 тыс</span>
+                  <span>до 249 тыс</span>
+                </p>
+                <p class="detals-control__text detals-control__text--dt">
+                  <span>от 250тыс</span>
+                  <span>до 499тыс</span>
+                </p>
+                <p class="detals-control__text detals-control__text--dt">
+                  <span>от 500 тыс</span>
+                  <span>до 1 млн</span>
+                </p>
+                <p class="detals-control__text detals-control__text--dt">
+                  <span>от 1 млн</span>
+                </p>
+                <p class="detals-control__text detals-control__text--mb">
+                  100 тыс - 249 тыс
+                </p>
+                <p class="detals-control__text detals-control__text--mb">
+                  250 тыс - 499 тыс
+                </p>
+                <p class="detals-control__text detals-control__text--mb">
+                  500 тыс - 1 млн
+                </p>
+                <p class="detals-control__text detals-control__text--mb">
+                  от 1 млн
+                </p>
+              </div>
             </div>
-            <div class="detals-control__contribution">
-              <p class="detals-control__title">Вклад:</p>
-              <p class="detals-control__text">
-                <span>от 100 тыс</span>
-                <span>до 249 тыс</span>
-              </p>
-              <p class="detals-control__text">
-                <span>от 250тыс</span>
-                <span>до 499тыс</span>
-              </p>
-              <p class="detals-control__text">
-                <span>от 500 тыс</span>
-                <span>до 1 млн</span>
-              </p>
-              <p class="detals-control__text">
-                <span>от 1 млн</span>
-              </p>
-            </div>
+            <p class="options__signature">Если срок менее 1 года, то доходность уменьшается на 1%</p>
             <a class="btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
           </div>
-          <p class="options__signature">Если срок менее 1 года, то доходность уменьшается на 1%</p>
-        </div>
+      </div>
         <div class="options__container">
-          <h3>
-            <span class="options__title-dt">Финансирование Сделки (ФС)</span>
-            <span class="options__title-mb">Финансирование конкретной сделки</span>
-          </h3>
-          <ul class="options__list">
-            <li class="options__item options__item--active">Условия</li>
-            <li class="options__item">Доступные лоты</li>
-            <li class="options__item">Преимущества</li>
-            <li class="options__item">Ограничения</li>
-            <li class="options__item">Шаблон договора</li>
-          </ul>
-          <h4>Как это работает?</h4>
-          <p class="options__description">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и становится залогодержателем</p>
-          <div class="options__detals detals-deal">
-            <div class="detals-deal__income">
-              <p class="detals-deal__title">Доход:</p>
-              <p>
-                <span class="detals-deal__percent">18-20%</span>
-                <span class="detals-deal__sub-text">годовых</span>
-              </p>
-            </div>
-            <div class="detals-deal__contribution">
-              <p class="detals-deal__title">Вклад:</p>
-              <p class="detals-deal__text">
-                <span>от 500 тыс</span>
-              </p>
+          <div class="options__chapter">
+            <h3>Финансирование Сделки (ФС)</h3>
+            <ul class="options__list">
+              <li class="options__item options__item--active">Условия</li>
+              <li class="options__item">Доступные лоты</li>
+              <li class="options__item">Преимущества</li>
+              <li class="options__item">Ограничения</li>
+              <li class="options__item">Шаблон договора</li>
+            </ul>
+            <h4>Как это работает?</h4>
+            <p class="options__description">Вид финансирования, при котором один инвестор покрывает всю сумму сделки и становится залогодержателем</p>
+            <div class="options__detals detals-deal">
+              <div class="detals-deal__income">
+                <p class="detals-deal__title">Доход:</p>
+                <p>
+                  <span class="detals-deal__percent">18-20%</span>
+                  <span class="detals-deal__sub-text">годовых</span>
+                </p>
+              </div>
+              <div class="detals-deal__contribution">
+                <p class="detals-deal__title">Вклад:</p>
+                <p class="detals-deal__text">
+                  <span>от 500 тыс</span>
+                </p>
+              </div>
             </div>
             <a class="btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
           </div>

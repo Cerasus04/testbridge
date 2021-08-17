@@ -1,12 +1,24 @@
 .detals-control {
 }
 .detals-control__income {
+
+  width: 35%;
+  display: flex;
+  flex-direction: column;
 }
 .detals-control__percent {
 }
 .detals-control__contribution {
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .detals-control__text {
+  min-height: 50px;
   font-size: 14px;
   font-weight: 900;
   line-height: 17px;
@@ -14,6 +26,22 @@
   @media (min-width: $tablet-width) {
     font-weight: 700;
     line-height: 20px;
+  }
+
+  &--mb {
+    display: flex;
+    align-items: center;
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--dt {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
 .detals-control__percent {
