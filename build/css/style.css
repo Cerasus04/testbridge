@@ -165,8 +165,7 @@ ul {
 
 button {
   border: none;
-  background: transparent;
-  outline: 1px solid red; }
+  background: transparent; }
 
 .accent-color {
   color: #FF970A; }
@@ -474,13 +473,13 @@ button {
 
 .options {
   width: calc(100% - 30px);
-  margin: 0 auto; }
+  margin: 0 auto 37px; }
   .options h2 {
     margin: 0;
     font-size: 25px;
     font-weight: 700;
     line-height: 31px;
-    margin-bottom: 90px; }
+    margin-bottom: 30px; }
     @media (min-width: 768px) {
       .options h2 {
         font-size: 60px;
@@ -492,6 +491,7 @@ button {
 
 .options__container {
   display: none;
+  padding-bottom: 1px;
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px; }
@@ -517,6 +517,14 @@ button {
   .options__container--active {
     display: block;
     background-color: #181818; }
+  .options__container .btn {
+    display: block;
+    width: calc(100% - 80px);
+    margin: 15px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: left; }
 
 .options__chapter {
   margin: 0 10px; }
@@ -528,7 +536,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 27px 0 17px;
+  padding: 0 27px 60px 17px;
   background: #000000;
   border-radius: 20px; }
   @media (min-width: 1024px) {
@@ -566,8 +574,18 @@ button {
       line-height: 25px; } }
 
 .options__signature {
+  position: absolute;
+  bottom: 12%;
+  left: 20px;
+  width: calc(100% - 40px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 7px 17px;
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  background-color: #181818;
+  border-radius: 11px;
+  color: #A9A9A9; }
   @media (min-width: 768px) {
     .options__signature {
       font-size: 15px;
@@ -707,13 +725,13 @@ button {
 
 .options {
   width: calc(100% - 30px);
-  margin: 0 auto; }
+  margin: 0 auto 37px; }
   .options h2 {
     margin: 0;
     font-size: 25px;
     font-weight: 700;
     line-height: 31px;
-    margin-bottom: 90px; }
+    margin-bottom: 30px; }
     @media (min-width: 768px) {
       .options h2 {
         font-size: 60px;
@@ -725,6 +743,7 @@ button {
 
 .options__container {
   display: none;
+  padding-bottom: 1px;
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px; }
@@ -750,6 +769,14 @@ button {
   .options__container--active {
     display: block;
     background-color: #181818; }
+  .options__container .btn {
+    display: block;
+    width: calc(100% - 80px);
+    margin: 15px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: left; }
 
 .options__chapter {
   margin: 0 10px; }
@@ -761,7 +788,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 27px 0 17px;
+  padding: 0 27px 60px 17px;
   background: #000000;
   border-radius: 20px; }
   @media (min-width: 1024px) {
@@ -799,8 +826,18 @@ button {
       line-height: 25px; } }
 
 .options__signature {
+  position: absolute;
+  bottom: 12%;
+  left: 20px;
+  width: calc(100% - 40px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 7px 17px;
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  background-color: #181818;
+  border-radius: 11px;
+  color: #A9A9A9; }
   @media (min-width: 768px) {
     .options__signature {
       font-size: 15px;
@@ -837,32 +874,104 @@ button {
     background: #181818;
     border-radius: 20px 20px 0 0; }
 
-.renge-slider legend {
+.renge-slider {
+  width: 285px;
+  margin: 0 auto; }
+  .renge-slider input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 51px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #A9A9A9;
+    background-color: inherit;
+    border: 0; }
+
+.renge-slider__title {
   font-size: 13px;
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  color: #A9A9A9; }
   @media (min-width: 1024px) {
-    .renge-slider legend {
+    .renge-slider__title {
       font-size: 15px;
       line-height: 18px; } }
 
+.renge-slider__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px; }
+
 .renge-slider__result {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 17px 50px 17px 20px;
   font-size: 18px;
   font-weight: 500;
-  line-height: 17px; }
+  line-height: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px; }
   @media (min-width: 1024px) {
     .renge-slider__result {
       font-size: 23px;
       font-weight: 500;
       line-height: 22px; } }
 
+.range-slider__progress {
+  width: 100%; }
+
+.range-slider__controls {
+  position: relative; }
+
+.range-slider__scale {
+  position: relative;
+  top: -2px;
+  width: 100px;
+  height: 5px;
+  background-color: #FF970A; }
+
+.range-slider__max {
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #FF970A; }
+
 .radio__wrapper p {
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  color: #A9A9A9; }
   @media (min-width: 1024px) {
     .radio__wrapper p {
       font-size: 15px;
       line-height: 18px; } }
+
+.radio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  border-radius: 21px; }
+
+.radio__list-item {
+  width: 50%;
+  padding: 13px 5px;
+  text-align: center;
+  color: #696969; }
+  .radio__list-item--active {
+    color: #1B1B1B;
+    background-color: #FFFFFF;
+    border-radius: 21px; }
 
 .radio__meaning {
   font-weight: 500;
@@ -871,26 +980,70 @@ button {
     .radio__meaning {
       font-size: 16px;
       line-height: 15px; } }
-  .radio__meaning--active {
-    color: #1B1B1B;
-    background-color: #FFFFFF; }
 
-.calculator h2 {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 31px; }
-  @media (min-width: 768px) {
-    .calculator h2 {
-      font-size: 60px;
-      line-height: 60px; } }
+.calculator {
+  padding: 23px 0 33px; }
+  .calculator h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px; }
+    @media (min-width: 768px) {
+      .calculator h2 {
+        font-size: 60px;
+        line-height: 60px; } }
+
+.calculator__wrapper {
+  width: calc(100% - 30px);
+  margin: 0 auto; }
+
+.calculator__form fieldset {
+  padding: 0;
+  border: 0; }
 
 .calculator__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26px 16px 31px 31px;
+  margin-top: 25px;
+  border-radius: 18px;
   background-color: #000000; }
+  .calculator__result p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .calculator__result div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .calculator__result a {
+    display: block;
+    width: calc(100% - 34px);
+    margin: 15px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: center; }
 
 .calculator__result-title {
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  color: #A9A9A9; }
   @media (min-width: 1024px) {
     .calculator__result-title {
       font-size: 15px;

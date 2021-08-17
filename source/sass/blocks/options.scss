@@ -1,10 +1,10 @@
 .options {
   width: calc(100% - 30px);
-  margin: 0 auto;
+  margin: 0 auto 37px;
 
   & h2 {
     @include title;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
   }
 }
 .options__wrapper {
@@ -13,6 +13,7 @@
 }
 .options__container {
   display: none;
+  padding-bottom: 1px;
 
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px;
@@ -48,15 +49,25 @@
     background-color: $bg-wrap;
 
   }
+
+  & .btn {
+    display: block;
+    width: calc(100% - 80px);
+    margin: 15px auto;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: left;
+  }
 }
 
 .options__chapter {
   margin: 0 10px;
+
 }
 .options__detals {
   display: flex;
   justify-content: space-between;
-  padding: 0 27px 0 17px;
+  padding: 0 27px 60px 17px;
   background: $black;
   border-radius: 20px;
 
@@ -100,8 +111,17 @@
 }
 
 .options__signature {
+  position: absolute;
+  bottom: 12%;
+  left: 20px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  padding: 7px 17px;
   font-weight: 400;
   line-height: 16px;
+  background-color: $bg-wrap;
+  border-radius: 11px;
+  color: $text-lighter;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -134,7 +154,7 @@
   line-height: 13px;
   text-align: center;
   z-index: 1;
-color: white;
+  color: white;
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 12px 12px 0 0;
 

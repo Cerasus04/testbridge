@@ -141,10 +141,10 @@
     <section class="main__options options">
       <h2>Варианты инвестирования</h2>
       <div class="options__wrapper">
-        <!-- <div class="options__controls">
-          <button type="button" class="options__control options_control--active">Доверительное управление (ДУ)</button>
+        <div class="options__controls">
+          <button type="button" class="options__control options__control--active">Доверительное управление (ДУ)</button>
           <button type="button" class="options__control">Финансирование конкретной сделки</button>
-        </div> -->
+        </div>
         <div class="options__container options__container--active">
           <div class="options__chapter">
             <h3>Доверительное управление (ДУ)</h3>
@@ -244,73 +244,74 @@
       </div>
     </section>
     <section class="main__calculator calculator">
-      <h2>Калькулятор дохода в Доверительном Управлении</h2>
-      <form class="calculator__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <div class="renge-slider">
-            <p class="renge-slider__result">2 050 000 &#x20bd;</p>
-            <legend>
-              Сумма сбережений
-              <label for="min-price" class="visually-hidden">от</label>
-              <input type="text" name="min-price" id="min-price" value="100 тыс">
-              <label for="max-price" class="visually-hidden">до</label>
-              <input type="text" name="max-price" id="max-price" value="5 млн">
-            </legend>
-            <div class="range-slider__progress">
-              <div class="range-slider__controls">
-                <div class="range-slider__scale">
-                  <div class="range-slider__bar"></div>
+      <div class="calculator__wrapper">
+        <h2>Калькулятор дохода в Доверительном Управлении</h2>
+        <form class="calculator__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <div class="renge-slider">
+              <p class="renge-slider__title">Сумма сбережений</p>
+              <p class="renge-slider__result">2 050 000 &#x20bd;</p>
+              <div class="range-slider__progress">
+                <div class="range-slider__controls">
+                  <div class="range-slider__scale"></div>
+                  <button class="range-slider__max" style="left:33%" type="button" aria-label="максимальное значение"></button>
                 </div>
-                <button class="range-slider__min" style="left:16%" type="button" aria-label="минимальное значение"></button>
-                <button class="range-slider__max" style="left:61%" type="button" aria-label="максимальное значение"></button>
+              </div>
+              <div class="renge-slider__input-wrapper">
+                <label for="min-price" class="visually-hidden">от</label>
+                <input type="text" name="min-price" id="min-price" value="100 тыс">
+                <label for="max-price" class="visually-hidden">до</label>
+                <input type="text" name="max-price" id="max-price" value="5 млн">
               </div>
             </div>
-          </div>
-          <div class="radio">
-            <div class="radio__wrapper">
-              <p>Срок</p>
-              <ul class="radio__list">
-                <li class="radio__list-item">
-                  <input class="visually-hidden" type="radio" name="conditions" value="6monts" id="half-year" checked="checked">
-                  <label class="radio__meaning radio__meaning--active" for="half-year">6 месяцев</label>
-                </li>
-                <li class="radio__list-item">
-                  <input class="visually-hidden" type="radio" name="conditions" value="12monts" id="year">
-                  <label class="radio__meaning" for="year">12 месяцев</label>
-                </li>
-              </ul>
+            <div class="radio">
+              <div class="radio__wrapper">
+                <p>Срок</p>
+                <ul class="radio__list">
+                  <li class="radio__list-item radio__list-item--active">
+                    <input class="visually-hidden" type="radio" name="conditions" value="6monts" id="half-year" checked="checked">
+                    <label class="radio__meaning" for="half-year">6 месяцев</label>
+                  </li>
+                  <li class="radio__list-item">
+                    <input class="visually-hidden" type="radio" name="conditions" value="12monts" id="year">
+                    <label class="radio__meaning" for="year">12 месяцев</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="radio__wrapper">
+                <p>Выплаты</p>
+                <ul class="radio__list">
+                  <li class="radio__list-item radio__list-item--active">
+                    <input class="visually-hidden" type="radio" name="payments" value="end-term" id="end-term" checked="checked">
+                    <label class="radio__meaning" for="end-term">В конце срока</label>
+                  </li>
+                  <li class="radio__list-item">
+                    <input class="visually-hidden" type="radio" name="payments" value="monthly" id="monthly">
+                    <label class="radio__meaning" for="monthly">Ежемесячно</label>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="radio__wrapper">
-              <p>Выплаты</p>
-              <ul class="radio__list">
-                <li class="radio__list-item">
-                  <input class="visually-hidden" type="radio" name="payments" value="end-term" id="end-term" checked="checked">
-                  <label class="radio__meaning radio__meaning--active" for="end-term">В конце срока</label>
-                </li>
-                <li class="radio__list-item">
-                  <input class="visually-hidden" type="radio" name="payments" value="monthly" id="monthly">
-                  <label class="radio__meaning" for="monthly">Ежемесячно</label>
-                </li>
-              </ul>
-            </div>
+          </fieldset>
+        </form>
+        <div class="calculator__result">
+          <p>
+            <span class="calculator__result-title">Ежемесячное начисление</span>
+            <span class="calculator__result-sum">22 208 ₽ </span>
+          </p>
+          <div>
+            <p>
+              <span class="calculator__result-title">Доход</span>
+              <span class="calculator__result-text">13%</span>
+            </p>
+            <p>
+              <span class="calculator__result-title">Ежегодное начислениее</span>
+              <span class="calculator__result-text">316 500 &#x20bd;</span>
+            </p>
           </div>
-        </fieldset>
-      </form>
-      <div class="calculator__result">
-        <p>
-          <span class="calculator__result-title">Ежемесячное начисление</span>
-          <span class="calculator__result-sum">22 208 ₽ </span>
-        </p>
-        <p>
-          <span class="calculator__result-title">Доход</span>
-          <span class="calculator__result-text">13%</span>
-        </p>
-        <p>
-          <span class="calculator__result-title">Ежегодное начислениее</span>
-          <span class="calculator__result-text">316 500 &#x20bd;</span>
-        </p>
-        <a class="calculator__btn btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
-        <a class="calculator__feadback link" aria-label="Получить консультацию">Получить консультацию</a>
+          <a class="calculator__btn btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
+          <a class="calculator__feadback btn btn--transparent" aria-label="Получить консультацию">Получить консультацию</a>
+        </div>
       </div>
     </section>
     <section class="main__steps steps">
