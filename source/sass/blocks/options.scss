@@ -1,20 +1,50 @@
 .options {
+  position: relative;
+
+  width: calc(100% - 30px);
+  margin: 0 auto;
 
   & h2 {
     @include title;
+    margin-bottom: 90px;
   }
 }
 .options__wrapper {
+  position: relative;
+}
+.options__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+  border-radius: 0 20px 20px 20px;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 18px;
+  }
+
   & h3 {
+    position: absolute;
+    top: -16%;
+    right: 0;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 9px 16px 10px;
     font-size: 12px;
     font-weight: 500;
     line-height: 13px;
+    text-align: center;
+    z-index: 1;
+
+    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+    border-radius: 12px 12px 0 0;
 
     @media (min-width: $desktop-width) {
       font-size: 27px;
       line-height: 27px;
     }
   }
+
   & h4 {
     font-size: 11px;
     font-weight: 400;
@@ -25,13 +55,18 @@
       line-height: 14px;
     }
   }
-}
-.options__container {
-  background: $bg-wrap;
-  border-radius: 20px;
 
-  @media (min-width: $desktop-width) {
-    border-radius: 18px;
+  &--active {
+    position: relative;
+    background-color: $bg-wrap;
+    z-index: 1;
+
+    & h3 {
+      top: -9.5%;
+      left: 0;
+      background: $bg-wrap;
+      border-radius: 20px 20px 0 0;
+    }
   }
 }
 .options__detals {
@@ -44,10 +79,16 @@
 
 }
 .options__list {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  padding-top: 25px;
 }
 .options__item {
+  display: none;
+  padding: 13px 19px;
   font-weight: 400;
   line-height: 12px;
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
 
   @media (min-width: $tablet-width) {
     font-style: 14px;
@@ -55,9 +96,11 @@
   }
 
   &--active {
+    display: block;
     color: $accent;
     border: 1.5px solid $accent;
     border-radius: 41px;
+    background-color: $bg-wrap;
   }
 }
 .options__description {
@@ -77,5 +120,15 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 18px;
+  }
+}
+
+.options__title-dt {
+  display: none;
+}
+
+.options__title-mb {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

@@ -1,17 +1,29 @@
 .promo {
-  min-height: 806px;
+  position: relative;
+  min-height: 410px;
   background-image: url("../img/promo-mb.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: bottom center;
+  background-size: 100%;
+
+  @media (min-width: $mobile-width-max) {
+    min-height: 590px;
+  }
 
   @media (min-width: $desktop-width) {
+    min-height: 806px;
     background-image: url("../img/promo-dt.jpg");
+    background-position: top center;
+    background-size: cover;
   }
 }
 
+.promo__wrapper {
+
+}
 .promo__title {
-  margin: 0;
+  max-width: 500px;
+  margin: 25px 23px 0;
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
@@ -22,14 +34,85 @@
   }
 }
 .promo__controls {
+  position: absolute;
+  top: -62px;
+  left: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 86px;
 }
-.promo__controls {
+.promo__control {
+  width: 17px;
+  height: 14px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+
+  &--play {
+    background-image: url("../img/icon-play.svg");
+  }
+
+  &--screen {
+    background-image: url("../img/icon-size.svg");
+  }
+
+  &--volume {
+    background-image: url("../img/icon-vol.svg");
+  }
 }
 .promo__control {
 }
 .promo__social-panel {
+
+
 }
 .promo__video-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  max-width: 197px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
+  backdrop-filter: blur(2.6px);
+
+  & a {
+    display: none;
+  }
+
+  & p {
+    padding: 15px 5px 10px 15px;
+    margin: 0;
+    max-width: 62%;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 11px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
 }
 .promo__video {
+  position: relative;
+
+  & img {
+    border-radius: 19px 14px 0 0;
+  }
+
+  & button {
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    width: 28px;
+    height: 24px;
+    background-image: url("../img/icon-promo-play.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
 }

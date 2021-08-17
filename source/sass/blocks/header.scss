@@ -1,4 +1,9 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
@@ -66,6 +71,10 @@
   display: block;
   width: 33px;
   height: 11px;
+  background-image: url("../img/icon-btn-mb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $desktop-width) {
     display: none;

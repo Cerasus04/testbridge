@@ -1,8 +1,11 @@
 .advantages {
 }
 .advantages__wrapper {
+  width: calc(100% - 30px);
+  margin: 0 auto;
 }
 .advantages__text-main {
+  margin: 15px 0;
   font-size: 44px;
   line-height: 44px;
   font-weight: 700;
@@ -34,6 +37,16 @@
   }
 }
 .adventages__result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & p {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    margin-right: 10px;
+  }
 }
 .advantages__sum {
   font-size: 26px;

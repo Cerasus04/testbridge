@@ -18,3 +18,18 @@
     font-size: 15px;
   }
 }
+
+.page__header {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+// .page__main {
+//   width: calc(100% - 30px);
+//   margin: 0 auto;
+// }
+
+.page__footer {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}

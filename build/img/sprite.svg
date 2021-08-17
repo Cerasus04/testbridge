@@ -16,6 +16,8 @@
 </g>
 </symbol><symbol id="icon-bottom" viewBox="0 0 13 22">
 <path d="M7.3587 -2.46589e-07L5.72826 -3.17858e-07L5.72826 18.6661L1.24456 13.8911L0.0869563 15.1239L6.54348 22L13 15.1239L11.8424 13.8911L7.35869 18.6661L7.3587 -2.46589e-07Z" fill="#FF9619"/>
+</symbol><symbol id="icon-btn-mb" viewBox="0 0 37 15">
+<path d="M2 2H35M35 13H13.8462" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
 </symbol><symbol id="icon-logo-dt" viewBox="0 0 165 62">
 <path d="M0 20V40L21 21.5V0L0 20Z" fill="white"/>
 <path d="M42 22V40L21 21H42V22Z" fill="white"/>
