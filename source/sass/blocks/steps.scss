@@ -1,10 +1,25 @@
 .steps {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  padding: 44px 0 46px;
+
   & h2 {
     @include title;
+    margin: 0 0 30px;
   }
 }
 .steps__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  counter-reset: myCounter;
+
   & li {
+    position: relative;
+    min-height: 61px;
+    width: 90%;
+    padding-left: 90px;
+    margin-bottom: 45px;
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
@@ -13,11 +28,72 @@
       font-size: 15px;
       line-height: 22px;
     }
+
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      width: 60px;
+      height: 61px;
+      margin-bottom: 15px;
+      font-size: 27px;
+      font-weight: 300;
+      line-height: 27px;
+      color: $accent;
+      counter-increment: myCounter;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 0;
+      width: 13px;
+      height: 22px;
+      background-image: url("../img/icon-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+    }
+
+    &:last-of-type::after {
+      content: none;
+    }
+  }
+
+  & span {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -112px;
+      width: 60px;
+      height: 61px;
+      background-color: $bg-wrap;
+      border-radius: 100%;
+    }
   }
 }
-.steps__btn {
-}
+.steps__btn,
 .steps__feadback {
+  display: block;
+  width: calc(100% - 96px);
+  margin: 0 auto;
+  text-align: center;
 }
-.btn--transparent {
+
+.steps__feadback {
+  margin: 18px auto 0;
+  text-align: center;
 }
+
+.steps__btn {
+  text-align: left;
+}
+

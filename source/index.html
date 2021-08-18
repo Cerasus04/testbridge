@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Печатные платы, производство печатных плат, монтаж печатных плат, печатные платы Мытищи">
-  <!-- <title>Smart Device</title>
-  <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" crossorigin="">
+  <title>Фондовая биржа</title>
+  <!-- <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin=""> -->
@@ -114,6 +114,7 @@
       </div>
     </section>
     <section class="main__advantages advantages" id="advantages">
+      <h2 class="visually-hidden">Отчет недели по работе инвесторов</h2>
       <div class="advantages__wrapper">
         <p class="advantages__text-main">38 469 800 &#x20bd;</p>
         <p class="advantages__text">
@@ -122,7 +123,7 @@
         <p class="advantages__period accent-color">
           Итоги недели <span>24.05.21 - 30.05.21</span>:
         </p>
-        <div class="adventages__result">
+        <div class="advantages__result">
           <p>
             <span class="advantages__sum">1М</span>
             <span class="advantages__paid">Выплачено инвесторам</span>
@@ -238,7 +239,7 @@
                 </p>
               </div>
             </div>
-            <a class="btn btn--accent" href="#" class="accent-color" aria-label="Инвестировать">Инвестировать</a>
+            <a class="btn btn--accent" href="#" aria-label="Инвестировать">Инвестировать</a>
           </div>
         </div>
       </div>
@@ -248,9 +249,9 @@
         <h2>Калькулятор дохода в Доверительном Управлении</h2>
         <form class="calculator__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <div class="renge-slider">
-              <p class="renge-slider__title">Сумма сбережений</p>
-              <p class="renge-slider__result">2 050 000 &#x20bd;</p>
+            <div class="range-slider">
+              <p class="range-slider__title">Сумма сбережений</p>
+              <p class="range-slider__result">2 050 000 &#x20bd;</p>
               <div class="range-slider__progress">
                 <div class="range-slider__controls">
                   <div class="range-slider__scale"></div>
@@ -258,7 +259,7 @@
                     aria-label="максимальное значение"></button>
                 </div>
               </div>
-              <div class="renge-slider__input-wrapper">
+              <div class="range-slider__input-wrapper">
                 <label for="min-price" class="visually-hidden">от</label>
                 <input type="text" name="min-price" id="min-price" value="100 тыс">
                 <label for="max-price" class="visually-hidden">до</label>
@@ -271,11 +272,11 @@
                 <ul class="radio__list">
                   <li class="radio__list-item radio__list-item--active">
                     <input class="visually-hidden" type="radio" name="conditions" value="6monts" id="half-year" checked="checked">
-                    <label class="radio__meaning"for="half-year">6 месяцев</label>
+                    <label class="radio__meaning" for="half-year">6 месяцев</label>
                   </li>
                   <li class="radio__list-item">
                     <input class="visually-hidden" type="radio" name="conditions" value="12monts" id="year">
-                    <label class="radio__meaning"for="year">12 месяцев</label>
+                    <label class="radio__meaning" for="year">12 месяцев</label>
                   </li>
                 </ul>
               </div>
@@ -284,11 +285,11 @@
                 <ul class="radio__list">
                   <li class="radio__list-item radio__list-item--active">
                     <input class="visually-hidden" type="radio" name="payments" value="end-term" id="end-term" checked="checked">
-                    <label class="radio__meaning"for="end-term">В конце срока</label>
+                    <label class="radio__meaning" for="end-term">В конце срока</label>
                   </li>
                   <li class="radio__list-item">
                     <input class="visually-hidden" type="radio" name="payments" value="monthly" id="monthly">
-                    <label class="radio__meaning"for="monthly">Ежемесячно</label>
+                    <label class="radio__meaning" for="monthly">Ежемесячно</label>
                   </li>
                 </ul>
               </div>
@@ -318,56 +319,66 @@
     <section class="main__steps steps">
       <h2>Как стать инвестором</h2>
       <ol class="steps__list">
-        <li>Вы оставляете заявку</li>
-        <li>Обсуждаем вопросы</li>
-        <li>Подписываете документы</li>
-        <li>Инвестируйте и получаете ежемесячный доход</li>
+        <li>
+          <span>Вы оставляете заявку</span>
+        </li>
+        <li>
+          <span>Обсуждаем вопросы</span>
+        </li>
+        <li>
+          <span>Подписываете документы</span>
+        </li>
+        <li>
+          <span>Инвестируйте и получаете ежемесячный доход</span>
+        </li>
       </ol>
       <a class="steps__btn btn btn--accent" aria-label="Оставить заявку">Оставить заявку</a>
       <a class="steps__feadback btn btn--transparent" aria-label="Необходимые документы">Необходимые документы</a>
     </section>
     <section class="main__review review">
-      <h2>Отзывы инвесторов</h2>
-      <a href="#" class="btn btn--accent" aria-label="Больше отзывов">Больше отзывов</a>
-      <div class="review__content">
-        <div class="review__wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/review1.webp">
-            <img src="img/review1.jpg" alt="Превью ролика с отзывом">
-          </picture>
-          <button type="button">
-            <span class="visually-hidden">Воспроизвести</span>
-          </button>
-          <p class="review__time">5 минут</p>
-          <p class="review__title">Отзыв нашего инвестора</p>
+      <div class="review__content-wrapper">
+        <h2>Отзывы инвесторов</h2>
+        <div class="review__content">
+          <div class="review__wrapper review__wrapper--current">
+            <picture>
+              <source type="image/webp" srcset="img/review1.webp">
+              <img src="img/review1.jpg" width="216" height="116" alt="Превью ролика с отзывом">
+            </picture>
+            <button type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+            <p class="review__time">5 минут</p>
+            <p class="review__title">Отзыв нашего инвестора</p>
+          </div>
+          <div class="review__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/review2.webp">
+              <img src="img/review2.jpg" width="216" height="116" alt="Превью ролика с отзывом">
+            </picture>
+            <button type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+            <p class="review__time">1 час 10 минут</p>
+            <p class="review__title">Отзыв нашего инвестора</p>
+          </div>
+          <div class="review__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/review3.webp">
+              <img src="img/review3.jpg" width="216" height="116" alt="Превью ролика с отзывом">
+            </picture>
+            <button type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+            <p class="review__time">1 час 55 минут</p>
+            <p class="review__title">Отзыв нашего инвестора</p>
+          </div>
         </div>
-        <div class="review__wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/review2.webp">
-            <img src="img/review2.jpg" alt="Превью ролика с отзывом">
-          </picture>
-          <button type="button">
-            <span class="visually-hidden">Воспроизвести</span>
-          </button>
-          <p class="review__time">1 час 10 минут</p>
-          <p class="review__title">Отзыв нашего инвестора</p>
+        <a class="review__more btn btn--accent" href="#" aria-label="Больше отзывов">Больше отзывов</a>
+        <div class="review__guarantees">
+          <h3>Гарантии</h3>
+          <p>Каждая сделка подкреплена залогом в виде ликвидной недвижимости. Ее рыночная стоимость минимум в 2 раза выше суммы инвестиций, что перекрывает риски </p>
+          <a href="#" class="review__consult-btn btn btn--accent" aria-label="Получить консультацию">Получить консультацию</a>
         </div>
-        <div class="review__wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/review3.webp">
-            <img src="img/review3.jpg" alt="Превью ролика с отзывом">
-          </picture>
-          <button type="button">
-            <span class="visually-hidden">Воспроизвести</span>
-          </button>
-          <p class="review__time">1 час 55 минут</p>
-          <p class="review__title">Отзыв нашего инвестора</p>
-        </div>
-      </div>
-      <div class="review__guarantees">
-        <h3>Гарантии</h3>
-        <p>Каждая сделка подкреплена залогом в виде ликвидной недвижимости. Ее рыночная стоимость минимум в 2 раза выше суммы инвестиций, что перекрывает риски </p>
-        <a href="#" class="btn btn--accent" aria-label="Получить консультацию">Получить консультацию</a>
       </div>
     </section>
   </main>
@@ -375,14 +386,14 @@
     <div class="footer__top">
       <section class="footer__contacts">
       <h2 class="visually-hidden">Блок с контактами</h2>
-        <a class="footer__logo link" id="top" aria-label="Логотип биржи">
+        <a class="footer__logo link" href="#top" aria-label="Логотип биржи">
           <span>
             <svg width="168" height="64" viewBox="0 0 168 64">
               <use xlink:href="img/sprite.svg#icon-logo-dt"></use>
             </svg>
           </span>
         </a>
-        <div class="footer__social social-foter">
+        <div class="footer__social social-footer">
           <a class="social-footer__link link" href="#" aria-label="ссылка на Youtube">
             <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 3.88267C24.75 3.88267 24.5055 2.11912 23.7563 1.34266C22.8055 0.32301 21.7398 0.318245 21.2516 0.259083C17.7531 7.15256e-08 12.5055 0 12.5055 0L12.4945 0C12.4945 0 7.24687 7.15256e-08 3.74844 0.259083C3.25937 0.318245 2.19453 0.32301 1.24297 1.34266C0.49375 2.11932 0.25 3.88267 0.25 3.88267C0.25 3.88267 0 5.95414 0 8.02462L0 9.96645C0 12.0377 0.25 14.1084 0.25 14.1084C0.25 14.1084 0.49375 15.8719 1.24297 16.6484C2.19453 17.6681 3.44375 17.6361 4 17.7425C6 17.9393 12.5 18 12.5 18C12.5 18 17.7531 17.9921 21.2516 17.733C21.7398 17.673 22.8055 17.6683 23.7563 16.6486C24.5055 15.8719 24.75 14.1086 24.75 14.1086C24.75 14.1086 25 12.0379 25 9.96645V8.02462C25 5.95414 24.75 3.88267 24.75 3.88267ZM9.91875 12.3194L9.91797 5.12885L16.6727 8.73655L9.91875 12.3194Z" fill="#FF0000"/>
@@ -459,11 +470,15 @@
       <form action="https://echo.htmlacademy.ru" class="footer__form">
         <fieldset>
           <legend class="visually-hidden">Обратная связь</legend>
-          <label class="visually-hidden" for="modal__name">Введите ваше имя</label>
-          <input type="text" id="modal__name" name="name" placeholder="Имя" required="">
-          <label class="visually-hidden" for="modal__tel">Введите ваш телефон</label>
-          <input type="tel" data-type="tel" id="modal__tel" name="phone" placeholder="Телефон" required="">
-          <button type="submit" class="btn btn--accent">Оставить заявку</button>
+          <div class="footer__row">
+            <label class="visually-hidden" for="modal__name">Введите ваше имя</label>
+            <input type="text" id="modal__name" name="name" placeholder="Ваше имя" required="">
+          </div>
+          <div class="footer__row">
+            <label class="visually-hidden" for="modal__tel">Введите ваш телефон</label>
+            <input type="tel" data-type="tel" id="modal__tel" name="phone" placeholder="Ваш номер телефона" required="">
+          </div>
+          <button type="submit" class="footer__button btn btn--accent">Оставить заявку</button>
         </fieldset>
       </form>
     </div>

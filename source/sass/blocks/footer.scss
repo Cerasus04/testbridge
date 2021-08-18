@@ -1,8 +1,17 @@
 .footer {
+  width: calc(100% - 32px);
+  padding: 62px 0 74px;
 }
 .footer__top {
+  display: flex;
+  flex-direction: column;
+
+  & section {
+    margin-bottom: 45px;
+  }
 }
 .footer__contacts {
+  align-self: center;
   & p {
     font-weight: 400;
     line-height: 19px;
@@ -39,6 +48,10 @@
   }
 }
 .footer__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   & h3 {
     font-size: 16px;
     font-weight: 600;
@@ -56,19 +69,33 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 19px;
+    color: $text-light1;
 
     @media (min-width: $desktop-width) {
       font-size: 15px;
       line-height: 22px;
     }
   }
+
+  & li {
+    margin-bottom: 15px;
+  }
 }
 .footer__block-borrowers {
+  width: 40%;
+
 
 }
 .footer__block-business {
+  width: 40%;
 }
 .footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  column-gap: 41px;
+  row-gap: 15px;
   & a {
     font-size: 16px;
     font-weight: 600;
@@ -84,10 +111,14 @@
   }
 }
 .footer__bottom {
+  display: flex;
+  flex-direction: column;
   & p {
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
+    color: $text-light1;
+    margin-top: 42px;
 
     @media (min-width: $desktop-width) {
       font-size: 15px;
@@ -96,4 +127,68 @@
   }
 }
 .footer__form {
+  order: -1;
+
+  & fieldset {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer__row {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: red;
+}
+
+.footer__row input {
+  width: 100%;
+  padding: 10px 30px 11px;
+  font: inherit;
+  color: $white;
+  border: none;
+  border-radius: 40px;
+  background-color: $bg-wrap;
+
+  &::placeholder {
+    color: $btn-transparrent;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    box-shadow: 0 0 0 3px $accent;
+  }
+
+  &:focus,
+  &:hover {
+    // outline: none;
+    // box-shadow: 0 0 0 3px $basic-green;
+  }
+
+}
+
+.footer__button {
+  width: 67%;
+  padding: 11px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.045em;
+  text-align: center;
+  border-radius: 33px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    // border-color: $hover-aqua;
+    // outline: none;
+  }
+
+  &:active {
+    // opacity: 0.5;
+  }
 }

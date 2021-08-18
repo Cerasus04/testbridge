@@ -1,12 +1,35 @@
 .review {
+  padding: 39px 0 53px;
+
   & h2 {
     @include title;
+    margin-bottom: 30px;
   }
 }
 
 .review__content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
 }
+
+.review__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.review__more {
+  width: 57%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 .review__wrapper {
+  position: relative;
+  display: none;
+  width: 85%;
   background-color: $bg-img;
   border-radius: 10px;
 
@@ -16,21 +39,62 @@
 
   & img {
     border-radius: 16px;
+    width: 100%;
 
     @media (min-width: $desktop-width) {
       border-radius: 18px;
     }
   }
+  &--current {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & button {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon-promo-play.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    opacity: 0.25;
+    transform: translateX(-50%);
+    border-radius: 100%;
+
+  }
 }
 
 .review__time {
+  position: absolute;
+  bottom: 30%;
+  left: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 66px;
+  height: 15px;
+  padding-left: 3px;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
   letter-spacing: 0.25px;
-  background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
-  backdrop-filter: blur(7px);
+  background: $bg-wrap;
+  border-radius: 3px;
+  backdrop-filter: blur(7.2px);
 
   @media (min-width: $desktop-width) {
     font-size: 12px;
@@ -40,6 +104,8 @@
 
 }
 .review__title {
+  padding: 8px 9px 12px;
+  margin: 0;
   font-size: 13px;
   font-weight: 500;
   line-height: 13px;
@@ -49,11 +115,18 @@
     line-height: 20px;
   }
 }
+
 .review__guarantees {
+  padding: 18px 18px 30px 17px;
+  margin-top: 38px;
+  border: 1px solid $border;
+  border-radius: 18px;
+
   & h3 {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
+    text-align: center;
 
     @media (min-width: $desktop-width) {
       font-size: 30px;
@@ -61,4 +134,17 @@
       line-height: 30px;
     }
   }
+
+  & p {
+    margin-bottom: 25px;
+    line-height: 19px;
+    color: $text-light1;
+  }
+}
+
+.review__consult-btn {
+  width: 77%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
 }

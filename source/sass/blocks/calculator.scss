@@ -19,7 +19,7 @@
 .calculator__result {
   display: flex;
   flex-direction: column;
-  padding: 26px 16px 31px 31px;
+  padding: 10px 16px 31px 31px;
   margin-top: 25px;
   border-radius: 18px;
   background-color: $black;
@@ -27,6 +27,7 @@
   & p {
     display: flex;
     flex-direction: column;
+    margin: 0 0 20px;
   }
 
   & div {
@@ -40,15 +41,17 @@
     width: calc(100% - 34px);
     margin: 15px auto;
     box-sizing: border-box;
-    padding: 15px 20px;
     text-align: center;
   }
 }
 .calculator__btn {
 }
 .calculator__feadback {
+
 }
 .calculator__result-title {
+  padding: 15px 0 20px;
+  margin: 0;
   font-weight: 400;
   line-height: 16px;
   color: $text-lighter;

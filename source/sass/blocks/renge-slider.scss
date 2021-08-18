@@ -1,4 +1,4 @@
-.renge-slider {
+.range-slider {
   width: 285px;
   margin: 0 auto;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.renge-slider__title {
+.range-slider__title {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
@@ -26,12 +26,12 @@
     line-height: 18px;
   }
 }
-.renge-slider__input-wrapper {
+.range-slider__input-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.renge-slider__result {
+.range-slider__result {
   display: block;
   box-sizing: border-box;
   margin: 0;
