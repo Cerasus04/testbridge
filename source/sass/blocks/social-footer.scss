@@ -1,4 +1,10 @@
 .social-footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(100% - 20px);
 }
 .social-footer__link {
+  & svg {
+    fill: $white;
+  }
 }

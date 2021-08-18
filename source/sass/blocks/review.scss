@@ -14,12 +14,29 @@
 }
 
 .review__content-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: calc(100% - 30px);
   margin: 0 auto;
 }
 
+.review__btn-mb {
+  position: absolute;
+  right: 6px;
+  top: 20%;
+  width: 15px;
+  height: 11px;
+  background-image: url("../img/icon-arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  transform: rotate(-90deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 .review__more {
   width: 57%;
   margin: 0 auto;
@@ -145,6 +162,6 @@
 .review__consult-btn {
   width: 77%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }

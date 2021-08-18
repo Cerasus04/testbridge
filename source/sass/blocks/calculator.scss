@@ -45,6 +45,7 @@
   }
 }
 .calculator__btn {
+
 }
 .calculator__feadback {
 
@@ -62,9 +63,12 @@
   }
 }
 .calculator__result-sum {
+  padding-bottom: 15px;
   font-size: 41px;
   font-weight: 700;
   line-height: 41px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 50px;

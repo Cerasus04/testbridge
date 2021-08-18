@@ -94,6 +94,20 @@
 }
 
 .steps__btn {
+  position: relative;
   text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 15px;
+    height: 12px;
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
 }
 

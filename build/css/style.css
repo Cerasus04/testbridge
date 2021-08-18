@@ -539,12 +539,24 @@ button {
     display: block;
     background-color: #181818; }
   .options__container .btn {
+    position: relative;
     display: block;
     width: calc(100% - 80px);
     margin: 15px auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: left; }
+    .options__container .btn::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      width: 15px;
+      height: 12px;
+      background-image: url("../img/icon-right.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
 
 .options__chapter {
   margin: 0 10px; }
@@ -556,6 +568,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
   padding: 0 27px 60px 17px;
   background: #000000;
   border-radius: 20px; }
@@ -826,12 +841,24 @@ button {
     display: block;
     background-color: #181818; }
   .options__container .btn {
+    position: relative;
     display: block;
     width: calc(100% - 80px);
     margin: 15px auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: left; }
+    .options__container .btn::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      width: 15px;
+      height: 12px;
+      background-image: url("../img/icon-right.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
 
 .options__chapter {
   margin: 0 10px; }
@@ -843,6 +870,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
   padding: 0 27px 60px 17px;
   background: #000000;
   border-radius: 20px; }
@@ -1118,9 +1148,11 @@ button {
       line-height: 18px; } }
 
 .calculator__result-sum {
+  padding-bottom: 15px;
   font-size: 41px;
   font-weight: 700;
-  line-height: 41px; }
+  line-height: 41px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   @media (min-width: 1024px) {
     .calculator__result-sum {
       font-size: 50px;
@@ -1226,7 +1258,19 @@ button {
   text-align: center; }
 
 .steps__btn {
+  position: relative;
   text-align: left; }
+  .steps__btn::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 15px;
+    height: 12px;
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain; }
 
 .review {
   padding: 39px 0 53px; }
@@ -1251,6 +1295,7 @@ button {
   margin-bottom: 25px; }
 
 .review__content-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,6 +1305,22 @@ button {
           flex-direction: column;
   width: calc(100% - 30px);
   margin: 0 auto; }
+
+.review__btn-mb {
+  position: absolute;
+  right: 6px;
+  top: 20%;
+  width: 15px;
+  height: 11px;
+  background-image: url("../img/icon-arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  @media (min-width: 768px) {
+    .review__btn-mb {
+      display: none; } }
 
 .review__more {
   width: 57%;
@@ -1379,7 +1440,7 @@ button {
 .review__consult-btn {
   width: 77%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 5px;
   text-align: center; }
 
 .footer {
@@ -1398,6 +1459,17 @@ button {
     margin-bottom: 45px; }
 
 .footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-item-align: center;
       align-self: center; }
   .footer__contacts p {
@@ -1553,3 +1625,15 @@ button {
   text-align: center;
   border-radius: 33px;
   cursor: pointer; }
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: calc(100% - 20px); }
+
+.social-footer__link svg {
+  fill: #FFFFFF; }
