@@ -5,6 +5,12 @@
 .advantages__wrapper {
   width: calc(100% - 30px);
   margin: 0 auto;
+
+  @media (min-width: $mobile-width-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .advantages__text-main {
   margin: 15px 0;

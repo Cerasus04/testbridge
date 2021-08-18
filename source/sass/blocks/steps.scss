@@ -79,6 +79,11 @@
       border-radius: 100%;
     }
   }
+
+  @media (min-width: $mobile-width-max) {
+    width: 55%;
+    margin: 0 auto;
+  }
 }
 .steps__btn,
 .steps__feadback {

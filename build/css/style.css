@@ -303,13 +303,12 @@ button {
 .promo {
   position: relative;
   min-height: 410px;
+  max-width: 528px;
+  margin: 0 auto;
   background-image: url("../img/promo-mb.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%; }
-  @media (min-width: 500px) {
-    .promo {
-      min-height: 590px; } }
   @media (min-width: 1024px) {
     .promo {
       min-height: 806px;
@@ -409,6 +408,18 @@ button {
 .advantages__wrapper {
   width: calc(100% - 30px);
   margin: 0 auto; }
+  @media (min-width: 425px) {
+    .advantages__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .advantages__text-main {
   margin: 15px 0;
@@ -531,10 +542,11 @@ button {
     font-weight: 400;
     line-height: 10px;
     color: #A9A9A9; }
-    @media (min-width: 768px) {
+    @media (min-width: 425px) {
       .options__container h4 {
         font-size: 15px;
-        line-height: 14px; } }
+        line-height: 14px;
+        text-align: center; } }
   .options__container--active {
     display: block;
     background-color: #181818; }
@@ -615,10 +627,11 @@ button {
   width: 97%;
   font-weight: 400;
   line-height: 19px; }
-  @media (min-width: 768px) {
+  @media (min-width: 425px) {
     .options__description {
       font-size: 17px;
-      line-height: 25px; } }
+      line-height: 25px;
+      text-align: center; } }
 
 .options__signature {
   position: absolute;
@@ -677,6 +690,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (min-width: 425px) {
+    .detals-control__income {
+      width: 50%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .detals-control__contribution {
   width: 60%;
@@ -693,6 +712,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (min-width: 425px) {
+    .detals-control__contribution {
+      width: 50%; } }
 
 .detals-control__text {
   min-height: 50px;
@@ -833,10 +855,11 @@ button {
     font-weight: 400;
     line-height: 10px;
     color: #A9A9A9; }
-    @media (min-width: 768px) {
+    @media (min-width: 425px) {
       .options__container h4 {
         font-size: 15px;
-        line-height: 14px; } }
+        line-height: 14px;
+        text-align: center; } }
   .options__container--active {
     display: block;
     background-color: #181818; }
@@ -917,10 +940,11 @@ button {
   width: 97%;
   font-weight: 400;
   line-height: 19px; }
-  @media (min-width: 768px) {
+  @media (min-width: 425px) {
     .options__description {
       font-size: 17px;
-      line-height: 25px; } }
+      line-height: 25px;
+      text-align: center; } }
 
 .options__signature {
   position: absolute;
@@ -1043,14 +1067,32 @@ button {
   border-radius: 100%;
   background-color: #FF970A; }
 
+@media (min-width: 425px) {
+  .radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
+
 .radio__wrapper p {
   font-weight: 400;
   line-height: 16px;
   color: #A9A9A9; }
+  @media (min-width: 425px) {
+    .radio__wrapper p {
+      text-align: center; } }
   @media (min-width: 1024px) {
     .radio__wrapper p {
       font-size: 15px;
       line-height: 18px; } }
+
+@media (min-width: 425px) {
+  .radio__wrapper {
+    width: 50%; } }
 
 .radio__list {
   display: -webkit-box;
@@ -1135,6 +1177,16 @@ button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center; }
+  @media (min-width: 425px) {
+    .calculator__result {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .calculator__result div {
+        width: 100%;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly; } }
 
 .calculator__result-title {
   padding: 15px 0 20px;
@@ -1245,6 +1297,10 @@ button {
       height: 61px;
       background-color: #181818;
       border-radius: 100%; }
+  @media (min-width: 425px) {
+    .steps__list {
+      width: 55%;
+      margin: 0 auto; } }
 
 .steps__btn,
 .steps__feadback {
@@ -1308,8 +1364,27 @@ button {
 
 .review__btn-mb {
   position: absolute;
-  right: 6px;
-  top: 20%;
+  right: 0;
+  top: 0;
+  width: 11%;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 425px) {
+    .review__btn-mb {
+      height: 60%; } }
+  @media (min-width: 768px) {
+    .review__btn-mb {
+      display: none; } }
+
+.review__btn-icon {
   width: 15px;
   height: 11px;
   background-image: url("../img/icon-arrow-bottom.svg");
@@ -1318,9 +1393,6 @@ button {
   background-size: contain;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg); }
-  @media (min-width: 768px) {
-    .review__btn-mb {
-      display: none; } }
 
 .review__more {
   width: 57%;
@@ -1333,12 +1405,18 @@ button {
   width: 85%;
   background-color: #2B2B2B;
   border-radius: 10px; }
+  @media (min-width: 425px) {
+    .review__wrapper {
+      border-radius: 30px; } }
   @media (min-width: 1024px) {
     .review__wrapper {
       border-radius: 18px; } }
   .review__wrapper img {
     border-radius: 16px;
     width: 100%; }
+    @media (min-width: 425px) {
+      .review__wrapper img {
+        border-radius: 30px; } }
     @media (min-width: 1024px) {
       .review__wrapper img {
         border-radius: 18px; } }
@@ -1362,6 +1440,10 @@ button {
     background-size: contain;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (min-width: 425px) {
+      .review__wrapper button {
+        width: 27px;
+        height: 27px; } }
   .review__wrapper::after {
     content: "";
     position: absolute;
@@ -1374,6 +1456,11 @@ button {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     border-radius: 100%; }
+    @media (min-width: 425px) {
+      .review__wrapper::after {
+        top: 26%;
+        width: 61px;
+        height: 59px; } }
 
 .review__time {
   position: absolute;
@@ -1400,8 +1487,12 @@ button {
   border-radius: 3px;
   -webkit-backdrop-filter: blur(7.2px);
           backdrop-filter: blur(7.2px); }
-  @media (min-width: 1024px) {
+  @media (min-width: 425px) {
     .review__time {
+      width: 86px;
+      height: 32px;
+      bottom: 18%;
+      padding-left: 7px;
       font-size: 12px;
       line-height: 16px;
       letter-spacing: 0.4px; } }
@@ -1412,7 +1503,7 @@ button {
   font-size: 13px;
   font-weight: 500;
   line-height: 13px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 425px) {
     .review__title {
       font-size: 20px;
       line-height: 20px; } }
@@ -1529,6 +1620,12 @@ button {
         line-height: 22px; } }
   .footer__block li {
     margin-bottom: 15px; }
+  @media (min-width: 425px) {
+    .footer__block {
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      text-align: center; } }
 
 .footer__block-borrowers {
   width: 40%; }
@@ -1555,6 +1652,18 @@ button {
       .footer__nav a {
         font-size: 18px;
         line-height: 18px; } }
+  @media (min-width: 425px) {
+    .footer__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 83%;
+      margin: 0 auto; } }
 
 .footer__bottom {
   display: -webkit-box;
@@ -1570,6 +1679,10 @@ button {
     line-height: 16px;
     color: #C0C0C0;
     margin-top: 42px; }
+    @media (min-width: 425px) {
+      .footer__bottom p {
+        width: 80%;
+        margin: 42px auto 0; } }
     @media (min-width: 1024px) {
       .footer__bottom p {
         font-size: 15px;
@@ -1584,6 +1697,10 @@ button {
     margin-top: 5px;
     padding: 0;
     border: none; }
+  @media (min-width: 425px) {
+    .footer__form {
+      width: 62%;
+      margin: 0 auto; } }
 
 .footer__row {
   display: block;

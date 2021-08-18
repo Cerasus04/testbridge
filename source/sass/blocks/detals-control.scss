@@ -5,17 +5,24 @@
   width: 35%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $mobile-width-max) {
+    width: 50%;
+    align-items: center;
+  }
 }
 .detals-control__percent {
 }
 .detals-control__contribution {
-
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
+  @media (min-width: $mobile-width-max) {
+    width: 50%;
+  }
 }
 .detals-control__text {
   min-height: 50px;

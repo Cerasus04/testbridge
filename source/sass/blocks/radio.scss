@@ -1,4 +1,9 @@
 .radio {
+  @media (min-width: $mobile-width-max) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .radio__wrapper {
   & p {
@@ -6,10 +11,17 @@
     line-height: 16px;
     color: $text-lighter;
 
+    @media (min-width: $mobile-width-max) {
+      text-align: center;
+    }
+
     @media (min-width: $desktop-width) {
       font-size: 15px;
       line-height: 18px;
     }
+  }
+  @media (min-width: $mobile-width-max) {
+    width: 50%;
   }
 }
 .radio__list {

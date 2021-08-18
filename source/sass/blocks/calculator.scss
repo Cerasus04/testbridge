@@ -43,6 +43,15 @@
     box-sizing: border-box;
     text-align: center;
   }
+
+  @media (min-width: $mobile-width-max) {
+    align-items: center;
+
+    & div {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
 }
 .calculator__btn {
 

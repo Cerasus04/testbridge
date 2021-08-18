@@ -1,14 +1,12 @@
 .promo {
   position: relative;
   min-height: 410px;
+  max-width: 528px;
+  margin: 0 auto;
   background-image: url("../img/promo-mb.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%;
-
-  @media (min-width: $mobile-width-max) {
-    min-height: 590px;
-  }
 
   @media (min-width: $desktop-width) {
     min-height: 806px;
