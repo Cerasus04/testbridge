@@ -91,11 +91,26 @@
   }
 
   &--active {
+    position: relative;
     display: block;
     color: $accent;
     border: 1.5px solid $accent;
     border-radius: 41px;
     background-color: $bg-wrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 19px;
+      top: 16px;
+      width: 11px;
+      height: 9px;
+      background-image: url("../img/icon-arrow-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+
+    }
   }
 }
 .options__description {
@@ -142,9 +157,6 @@
   display: flex;
 }
 .options__control {
-  // position: relative;
-  // top: -16%;
-  // right: 0;
   width: 50%;
   box-sizing: border-box;
   padding: 9px 16px 10px;
@@ -158,11 +170,8 @@
   border-radius: 12px 12px 0 0;
 
   &--active {
-    & h3 {
-      // top: -9.5%;
-      left: 0;
-      background: $bg-wrap;
-      border-radius: 20px 20px 0 0;
-    }
+    background-color: $bg-wrap;
+    border-radius: 20px 20px 0 0;
   }
+
 }

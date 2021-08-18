@@ -4,14 +4,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
 }
 .detals-deal__income {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 
 }
 
 .detals-deal__contribution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 .detals-deal__title {
   font-family: "Gotham Pro Bl", "Arial", sans-serif;

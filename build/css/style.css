@@ -167,8 +167,7 @@ ul {
 
 button {
   border: none;
-  background: transparent;
-  outline: 1px solid red; }
+  background: transparent; }
 
 .accent-color {
   color: #FF970A; }
@@ -403,6 +402,10 @@ button {
 .social {
   display: none; }
 
+.advantages {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
 .advantages__wrapper {
   width: calc(100% - 30px);
   margin: 0 auto; }
@@ -446,6 +449,7 @@ button {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
   .advantages__result p {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -454,7 +458,21 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 29%;
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px; }
+    .advantages__result p::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 6px;
+      width: 12px;
+      height: 12px;
+      background-image: url("../img/icon-quest.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
 
 .advantages__sum {
   font-size: 26px;
@@ -560,11 +578,23 @@ button {
       font-style: 14px;
       line-height: 15px; } }
   .options__item--active {
+    position: relative;
     display: block;
     color: #FF970A;
     border: 1.5px solid #FF970A;
     border-radius: 41px;
     background-color: #181818; }
+    .options__item--active::after {
+      content: "";
+      position: absolute;
+      right: 19px;
+      top: 16px;
+      width: 11px;
+      height: 9px;
+      background-image: url("../img/icon-arrow-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
 
 .options__description {
   width: 97%;
@@ -619,9 +649,8 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 12px 12px 0 0; }
-  .options__control--active h3 {
-    left: 0;
-    background: #181818;
+  .options__control--active {
+    background-color: #181818;
     border-radius: 20px 20px 0 0; }
 
 .detals-control__income {
@@ -696,7 +725,32 @@ button {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  text-align: center; }
+
+.detals-deal__income {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.detals-deal__contribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .detals-deal__title {
   font-family: "Gotham Pro Bl", "Arial", sans-serif;
@@ -811,11 +865,23 @@ button {
       font-style: 14px;
       line-height: 15px; } }
   .options__item--active {
+    position: relative;
     display: block;
     color: #FF970A;
     border: 1.5px solid #FF970A;
     border-radius: 41px;
     background-color: #181818; }
+    .options__item--active::after {
+      content: "";
+      position: absolute;
+      right: 19px;
+      top: 16px;
+      width: 11px;
+      height: 9px;
+      background-image: url("../img/icon-arrow-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
 
 .options__description {
   width: 97%;
@@ -870,9 +936,8 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 12px 12px 0 0; }
-  .options__control--active h3 {
-    left: 0;
-    background: #181818;
+  .options__control--active {
+    background-color: #181818;
     border-radius: 20px 20px 0 0; }
 
 .range-slider {
