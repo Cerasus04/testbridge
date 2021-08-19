@@ -11,6 +11,11 @@
   line-height: 31px;
 
   @media (min-width: $tablet-width) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
   }

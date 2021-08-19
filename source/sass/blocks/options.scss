@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 40%;
+    width: 48%;
     border-radius: 18px;
   }
 
@@ -102,6 +102,16 @@
   background: $black;
   border-radius: 20px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 5px;
+
+    &--deal {
+      flex-direction: row;
+      padding: 5px 20px;
+    }
+  }
   @media (min-width: $desktop-width) {
     border-radius: 18px;
   }
@@ -113,7 +123,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     padding: 0;
     background-color: $black;
     border-radius: 20px;
@@ -128,14 +138,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    font-style: 12px;
+    padding: 13px;
+    font-size: 12px;
     line-height: 15px;
     background: none;
     background-color: $black;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    font-style: 14px;
+    font-size: 14px;
   }
 
   &--active {
