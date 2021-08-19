@@ -8,11 +8,17 @@
   background-position: bottom center;
   background-size: 100%;
 
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    min-height: 506px;
+    background-image: url("../img/promo-dt.jpg");
+    background-position: bottom center;
+    background-size: cover;
+  }
   @media (min-width: $desktop-width) {
     min-height: 806px;
-    background-image: url("../img/promo-dt.jpg");
     background-position: top center;
-    background-size: cover;
+    // background-size: cover;
   }
 }
 
@@ -25,6 +31,11 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 420px;
+    margin:130px 60px 0;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 72px;
@@ -39,6 +50,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 86px;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 63px;
+    left: unset;
+  }
 }
 .promo__control {
   width: 17px;
@@ -77,6 +94,10 @@
   background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
   backdrop-filter: blur(2.6px);
 
+  @media (min-width: $tablet-width) {
+    max-width: 390px;
+  }
+
   & a {
     display: none;
   }
@@ -89,9 +110,14 @@
     font-weight: 600;
     line-height: 11px;
 
+    @media (min-width: $tablet-width) {
+      padding: 37px 5px 29px 15px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
     @media (min-width: $desktop-width) {
       font-size: 22px;
-      line-height: 22px;
     }
   }
 }
@@ -99,7 +125,11 @@
   position: relative;
 
   & img {
-    border-radius: 19px 14px 0 0;
+    border-radius: 30px 14px 0 0;
+
+    @media (min-width: $tablet-width) {
+      border-top-left-radius: 42px;
+    }
   }
 
   & button {
@@ -112,5 +142,9 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+    }
   }
 }

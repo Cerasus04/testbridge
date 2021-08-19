@@ -10,6 +10,12 @@
 .options__wrapper {
   position: relative;
   min-height: 285px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .options__container {
   display: none;
@@ -18,17 +24,27 @@
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 40%;
     border-radius: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // border-radius: 18px;
   }
 
   & h3 {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: block;
-      font-size: 27px;
+      font-size: 16px;
       line-height: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 27px;
     }
   }
 
@@ -93,6 +109,15 @@
 }
 .options__list {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    background-color: $black;
+    border-radius: 20px;
+  }
 }
 .options__item {
   display: none;
@@ -102,8 +127,15 @@
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
 
   @media (min-width: $tablet-width) {
-    font-style: 14px;
+    display: block;
+    font-style: 12px;
     line-height: 15px;
+    background: none;
+    background-color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-style: 14px;
   }
 
   &--active {
@@ -125,6 +157,14 @@
       background-repeat: no-repeat;
       background-position: top center;
       background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $black;
     }
   }
 }
@@ -171,6 +211,10 @@
 
 .options__controls {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 .options__control {
   width: 50%;

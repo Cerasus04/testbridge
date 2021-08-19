@@ -211,7 +211,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .header {
       position: absolute;
       top: 0;
@@ -309,12 +309,17 @@ button {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%; }
+  @media (min-width: 768px) {
+    .promo {
+      max-width: 100%;
+      min-height: 506px;
+      background-image: url("../img/promo-dt.jpg");
+      background-position: bottom center;
+      background-size: cover; } }
   @media (min-width: 1024px) {
     .promo {
       min-height: 806px;
-      background-image: url("../img/promo-dt.jpg");
-      background-position: top center;
-      background-size: cover; } }
+      background-position: top center; } }
 
 .promo__title {
   max-width: 500px;
@@ -322,6 +327,10 @@ button {
   font-weight: 700;
   font-size: 25px;
   line-height: 31px; }
+  @media (min-width: 768px) {
+    .promo__title {
+      max-width: 420px;
+      margin: 130px 60px 0; } }
   @media (min-width: 1024px) {
     .promo__title {
       font-size: 72px;
@@ -340,6 +349,11 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 86px; }
+  @media (min-width: 768px) {
+    .promo__controls {
+      top: 31px;
+      right: 63px;
+      left: unset; } }
 
 .promo__control {
   width: 17px;
@@ -369,6 +383,9 @@ button {
   background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
   -webkit-backdrop-filter: blur(2.6px);
           backdrop-filter: blur(2.6px); }
+  @media (min-width: 768px) {
+    .promo__video-wrapper {
+      max-width: 390px; } }
   .promo__video-wrapper a {
     display: none; }
   .promo__video-wrapper p {
@@ -378,15 +395,22 @@ button {
     font-size: 11px;
     font-weight: 600;
     line-height: 11px; }
+    @media (min-width: 768px) {
+      .promo__video-wrapper p {
+        padding: 37px 5px 29px 15px;
+        font-size: 16px;
+        line-height: 22px; } }
     @media (min-width: 1024px) {
       .promo__video-wrapper p {
-        font-size: 22px;
-        line-height: 22px; } }
+        font-size: 22px; } }
 
 .promo__video {
   position: relative; }
   .promo__video img {
-    border-radius: 19px 14px 0 0; }
+    border-radius: 30px 14px 0 0; }
+    @media (min-width: 768px) {
+      .promo__video img {
+        border-top-left-radius: 42px; } }
   .promo__video button {
     position: absolute;
     top: 20px;
@@ -397,6 +421,9 @@ button {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain; }
+    @media (min-width: 768px) {
+      .promo__video button {
+        top: 50px; } }
 
 .social {
   display: none; }
@@ -520,6 +547,16 @@ button {
 .options__wrapper {
   position: relative;
   min-height: 285px; }
+  @media (min-width: 768px) {
+    .options__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
 
 .options__container {
   display: none;
@@ -527,16 +564,21 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .options__container {
+      display: block;
+      width: 40%;
       border-radius: 18px; } }
   .options__container h3 {
     display: none; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .options__container h3 {
         display: block;
-        font-size: 27px;
+        font-size: 16px;
         line-height: 27px; } }
+    @media (min-width: 1024px) {
+      .options__container h3 {
+        font-size: 27px; } }
   .options__container h4 {
     font-size: 11px;
     font-weight: 400;
@@ -592,6 +634,19 @@ button {
 
 .options__list {
   padding-top: 25px; }
+  @media (min-width: 768px) {
+    .options__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding: 0;
+      background-color: #000000;
+      border-radius: 20px; } }
 
 .options__item {
   display: none;
@@ -602,8 +657,14 @@ button {
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%); }
   @media (min-width: 768px) {
     .options__item {
-      font-style: 14px;
-      line-height: 15px; } }
+      display: block;
+      font-style: 12px;
+      line-height: 15px;
+      background: none;
+      background-color: #000000; } }
+  @media (min-width: 1024px) {
+    .options__item {
+      font-style: 14px; } }
   .options__item--active {
     position: relative;
     display: block;
@@ -622,6 +683,12 @@ button {
       background-repeat: no-repeat;
       background-position: top center;
       background-size: contain; }
+      @media (min-width: 768px) {
+        .options__item--active::after {
+          content: none; } }
+    @media (min-width: 768px) {
+      .options__item--active {
+        background-color: #000000; } }
 
 .options__description {
   width: 97%;
@@ -662,6 +729,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 768px) {
+    .options__controls {
+      display: none; } }
 
 .options__control {
   width: 50%;
@@ -833,6 +903,16 @@ button {
 .options__wrapper {
   position: relative;
   min-height: 285px; }
+  @media (min-width: 768px) {
+    .options__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
 
 .options__container {
   display: none;
@@ -840,16 +920,21 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .options__container {
+      display: block;
+      width: 40%;
       border-radius: 18px; } }
   .options__container h3 {
     display: none; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .options__container h3 {
         display: block;
-        font-size: 27px;
+        font-size: 16px;
         line-height: 27px; } }
+    @media (min-width: 1024px) {
+      .options__container h3 {
+        font-size: 27px; } }
   .options__container h4 {
     font-size: 11px;
     font-weight: 400;
@@ -905,6 +990,19 @@ button {
 
 .options__list {
   padding-top: 25px; }
+  @media (min-width: 768px) {
+    .options__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding: 0;
+      background-color: #000000;
+      border-radius: 20px; } }
 
 .options__item {
   display: none;
@@ -915,8 +1013,14 @@ button {
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%); }
   @media (min-width: 768px) {
     .options__item {
-      font-style: 14px;
-      line-height: 15px; } }
+      display: block;
+      font-style: 12px;
+      line-height: 15px;
+      background: none;
+      background-color: #000000; } }
+  @media (min-width: 1024px) {
+    .options__item {
+      font-style: 14px; } }
   .options__item--active {
     position: relative;
     display: block;
@@ -935,6 +1039,12 @@ button {
       background-repeat: no-repeat;
       background-position: top center;
       background-size: contain; }
+      @media (min-width: 768px) {
+        .options__item--active::after {
+          content: none; } }
+    @media (min-width: 768px) {
+      .options__item--active {
+        background-color: #000000; } }
 
 .options__description {
   width: 97%;
@@ -975,6 +1085,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 768px) {
+    .options__controls {
+      display: none; } }
 
 .options__control {
   width: 50%;
