@@ -6,9 +6,18 @@
     @include title;
   }
 }
-.calculator__wrapper {
+.calculator__container {
   width: calc(100% - 30px);
   margin: 0 auto;
+}
+
+.calculator__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .calculator__form {
   & fieldset {

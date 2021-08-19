@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 .radio__wrapper {
   & p {
@@ -15,6 +19,10 @@
       text-align: center;
     }
 
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+
     @media (min-width: $desktop-width) {
       font-size: 15px;
       line-height: 18px;
@@ -22,6 +30,10 @@
   }
   @media (min-width: $mobile-width-max) {
     width: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 .radio__list {
