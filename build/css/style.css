@@ -155,6 +155,7 @@ input[type="radio"].visually-hidden {
           box-shadow: 0px 3px 15px rgba(255, 151, 10, 0.41); }
 
 .link {
+  display: block;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
@@ -330,7 +331,8 @@ button {
   @media (min-width: 768px) {
     .promo__title {
       max-width: 420px;
-      margin: 88px 60px 0; } }
+      margin: 88px 60px 0;
+      padding-top: 35px; } }
   @media (min-width: 1024px) {
     .promo__title {
       font-size: 72px;
@@ -1587,6 +1589,24 @@ button {
           flex-direction: column;
   list-style: none;
   counter-reset: myCounter; }
+  @media (min-width: 425px) {
+    .steps__list {
+      width: 55%;
+      margin: 0 auto; } }
+  @media (min-width: 768px) {
+    .steps__list {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 77px; } }
   .steps__list li {
     position: relative;
     min-height: 61px;
@@ -1596,8 +1616,18 @@ button {
     font-size: 16px;
     font-weight: 400;
     line-height: 23px; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .steps__list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        max-width: 142px;
+        margin-bottom: 0;
+        padding-left: 0;
+        min-height: 200px;
         font-size: 15px;
         line-height: 22px; } }
     .steps__list li::before {
@@ -1616,6 +1646,10 @@ button {
       color: #FF970A;
       counter-increment: myCounter;
       z-index: 1; }
+      @media (min-width: 768px) {
+        .steps__list li::before {
+          top: 25%;
+          left: 44%; } }
     .steps__list li::after {
       content: "";
       position: absolute;
@@ -1627,8 +1661,15 @@ button {
       background-repeat: no-repeat;
       background-position: top center;
       background-size: contain; }
+      @media (min-width: 768px) {
+        .steps__list li::after {
+          bottom: 39%;
+          left: 63px; } }
     .steps__list li:last-of-type::after {
       content: none; }
+      @media (min-width: 768px) {
+        .steps__list li:last-of-type::after {
+          content: ""; } }
   .steps__list span {
     position: relative; }
     .steps__list span::after {
@@ -1640,10 +1681,20 @@ button {
       height: 61px;
       background-color: #181818;
       border-radius: 100%; }
-  @media (min-width: 425px) {
-    .steps__list {
-      width: 55%;
-      margin: 0 auto; } }
+    @media (min-width: 768px) {
+      .steps__list span {
+        min-height: 66px;
+        text-align: center; }
+        .steps__list span::after {
+          top: -102px;
+          left: 40px; } }
+
+@media (min-width: 768px) {
+  .steps__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%; } }
 
 .steps__btn,
 .steps__feadback {
@@ -1651,10 +1702,17 @@ button {
   width: calc(100% - 96px);
   margin: 0 auto;
   text-align: center; }
+  @media (min-width: 768px) {
+    .steps__btn,
+    .steps__feadback {
+      width: 40%; } }
 
 .steps__feadback {
   margin: 18px auto 0;
   text-align: center; }
+  @media (min-width: 768px) {
+    .steps__feadback {
+      margin-top: 0; } }
 
 .steps__btn {
   position: relative;
@@ -1696,6 +1754,11 @@ button {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .review__content {
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
 
 .review__content-wrapper {
   position: relative;
@@ -1755,6 +1818,16 @@ button {
   @media (min-width: 425px) {
     .review__wrapper {
       border-radius: 30px; } }
+  @media (min-width: 768px) {
+    .review__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 28%; } }
   @media (min-width: 1024px) {
     .review__wrapper {
       border-radius: 18px; } }
@@ -1791,6 +1864,9 @@ button {
       .review__wrapper button {
         width: 27px;
         height: 27px; } }
+    @media (min-width: 768px) {
+      .review__wrapper button {
+        top: 15%; } }
   .review__wrapper::after {
     content: "";
     position: absolute;
@@ -1806,6 +1882,11 @@ button {
     @media (min-width: 425px) {
       .review__wrapper::after {
         top: 29%;
+        width: 61px;
+        height: 59px; } }
+    @media (min-width: 768px) {
+      .review__wrapper::after {
+        top: 7%;
         width: 61px;
         height: 59px; } }
 
@@ -1843,6 +1924,10 @@ button {
       font-size: 12px;
       line-height: 16px;
       letter-spacing: 0.4px; } }
+  @media (min-width: 768px) {
+    .review__time {
+      width: 106px;
+      bottom: 25%; } }
 
 .review__title {
   padding: 8px 9px 12px;
@@ -1854,17 +1939,31 @@ button {
     .review__title {
       font-size: 20px;
       line-height: 20px; } }
+  @media (min-width: 768px) {
+    .review__title {
+      font-size: 14px;
+      line-height: 20px; } }
+  @media (min-width: 1024px) {
+    .review__title {
+      font-size: 20px;
+      line-height: 20px; } }
 
 .review__guarantees {
   padding: 18px 18px 30px 17px;
   margin-top: 38px;
   border: 1px solid #4C4C4C;
   border-radius: 18px; }
+  @media (min-width: 768px) {
+    .review__guarantees {
+      padding-left: 35px; } }
   .review__guarantees h3 {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     text-align: center; }
+    @media (min-width: 768px) {
+      .review__guarantees h3 {
+        text-align: left; } }
     @media (min-width: 1024px) {
       .review__guarantees h3 {
         font-size: 30px;
@@ -1874,12 +1973,31 @@ button {
     margin-bottom: 25px;
     line-height: 19px;
     color: #C0C0C0; }
+    @media (min-width: 768px) {
+      .review__guarantees p {
+        width: 75%;
+        margin: 0;
+        padding-right: 15px; } }
 
 .review__consult-btn {
-  width: 77%;
+  width: 60%;
   margin: 0 auto;
   padding: 5px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .review__consult-btn {
+      width: 25%; } }
+
+@media (min-width: 768px) {
+  .review__guarantees-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
 
 .footer {
   width: calc(100% - 32px);
@@ -1895,6 +2013,13 @@ button {
           flex-direction: column; }
   .footer__top section {
     margin-bottom: 45px; }
+  @media (min-width: 768px) {
+    .footer__top {
+      display: grid;
+      grid-template-columns: 33% 40% 25%;
+      -webkit-column-gap: 15px;
+         -moz-column-gap: 15px;
+              column-gap: 15px; } }
 
 .footer__contacts {
   display: -webkit-box;
@@ -1973,6 +2098,9 @@ button {
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
       text-align: center; } }
+  @media (min-width: 768px) {
+    .footer__block {
+      text-align: left; } }
 
 .footer__block-borrowers {
   width: 40%; }
@@ -2011,6 +2139,16 @@ button {
               justify-content: space-evenly;
       width: 83%;
       margin: 0 auto; } }
+  @media (min-width: 768px) {
+    .footer__nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-top: 15px; } }
 
 .footer__bottom {
   display: -webkit-box;

@@ -14,6 +14,20 @@
   list-style: none;
   counter-reset: myCounter;
 
+  @media (min-width: $mobile-width-max) {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 77px;
+  }
+
   & li {
     position: relative;
     min-height: 61px;
@@ -24,7 +38,13 @@
     font-weight: 400;
     line-height: 23px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: flex-end;
+      max-width: 142px;
+      margin-bottom: 0;
+      padding-left: 0;
+      min-height: 200px;
       font-size: 15px;
       line-height: 22px;
     }
@@ -45,6 +65,11 @@
       color: $accent;
       counter-increment: myCounter;
       z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        top: 25%;
+        left: 44%;
+      }
     }
 
     &::after {
@@ -58,10 +83,19 @@
       background-repeat: no-repeat;
       background-position: top center;
       background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        bottom: 39%;
+        left: 63px;
+      }
     }
 
     &:last-of-type::after {
       content: none;
+
+      @media (min-width: $tablet-width) {
+        content: "";
+      }
     }
   }
 
@@ -78,11 +112,22 @@
       background-color: $bg-wrap;
       border-radius: 100%;
     }
-  }
 
-  @media (min-width: $mobile-width-max) {
-    width: 55%;
-    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+      min-height: 66px;
+      text-align: center;
+
+      &::after {
+        top: -102px;
+        left: 40px;
+      }
+    }
+  }
+}
+.steps__btn-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 80%;
   }
 }
 .steps__btn,
@@ -91,11 +136,19 @@
   width: calc(100% - 96px);
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
 }
 
 .steps__feadback {
   margin: 18px auto 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .steps__btn {

@@ -9,6 +9,12 @@
   & section {
     margin-bottom: 45px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 33% 40% 25%;
+    column-gap: 15px;
+  }
 }
 .footer__contacts {
   display: flex;
@@ -91,12 +97,15 @@
     justify-content: space-evenly;
     text-align: center;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 .footer__block-borrowers {
   width: 40%;
-
-
 }
+
 .footer__block-business {
   width: 40%;
 }
@@ -128,6 +137,12 @@
     justify-content: space-evenly;
     width: 83%;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 15px;
   }
 }
 .footer__bottom {
