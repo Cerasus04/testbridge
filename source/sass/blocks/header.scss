@@ -9,6 +9,11 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1350px;
   }
 }
 .header__logo {
@@ -18,6 +23,7 @@
   @media (min-width: $tablet-width) {
     width: 164px;
     height: 62px;
+    margin-right: 20px;
   }
 }
 .header__logo-dt {
@@ -36,6 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
 .header__nav {
@@ -49,6 +56,7 @@
   @media(min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 83%;
   }
 }
 .header__item {
@@ -59,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 211px;
+    width: 17%;
     height: 49px;
     padding: 18px 25px;
     letter-spacing: 0.08em;
@@ -80,9 +88,4 @@
     display: none;
   }
 }
-.btn {
-}
-.btn--transparent {
-}
-.visually-hidden {
-}
+

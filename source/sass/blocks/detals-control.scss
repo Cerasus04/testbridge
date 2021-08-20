@@ -20,6 +20,11 @@
     max-width: 335px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 467px;
+    grid-template-columns: 50px repeat(4, 78px);
+  }
 }
 .detals-control__percent {
 }
@@ -41,6 +46,11 @@
     max-width: 335px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 467px;
+    grid-template-columns: 50px repeat(4, 78px);
   }
 }
 .detals-control__text {

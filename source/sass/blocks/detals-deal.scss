@@ -9,6 +9,10 @@
     @media (min-width: $tablet-width) {
       min-height: auto;
     }
+
+    @media (min-width: $desktop-width) {
+      align-items: flex-start;
+    }
   }
 }
 .detals-deal__income {
@@ -16,12 +20,22 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 
 .detals-deal__contribution {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 .detals-deal__title {
   font-family: "Gotham Pro Bl", "Arial", sans-serif;
@@ -33,6 +47,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 .detals-deal__sub-text {
@@ -50,4 +68,8 @@
     font-size: 33px;
     line-height: 41px;
   }
+}
+
+.detals-deal__text {
+  margin-top: 13px;
 }

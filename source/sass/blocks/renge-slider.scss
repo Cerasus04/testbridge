@@ -13,6 +13,10 @@
     background-color: inherit;
     border: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .range-slider__title {
@@ -61,6 +65,9 @@
   height: 5px;
   background-color: $accent;
 
+  @media (min-width: $desktop-width) {
+    width: 161px;
+  }
 }
 .range-slider__max {
   position: absolute;

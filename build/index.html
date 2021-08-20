@@ -67,12 +67,12 @@
   <main class="page__main main">
     <h1 class="visually-hidden">Инвестиционный фонд "Бридж"</h1>
     <section class="main__promo promo">
-      <div class="promo__wrapper">
-        <div class="promo__controls">
-          <button type="button" class="promo__control promo__control--play"></button>
-          <button type="button" class="promo__control promo__control--screen"></button>
-          <button type="button" class="promo__control promo__control--volume"></button>
-        </div>
+      <div class="promo__controls">
+        <button type="button" class="promo__control promo__control--play"></button>
+        <button type="button" class="promo__control promo__control--screen"></button>
+        <button type="button" class="promo__control promo__control--volume"></button>
+      </div>
+      <div class="promo__wrapper-dt">
         <h2 class="promo__title">Пассивный доход до <span class="accent-color">20%</span> годовых на инвестициях в недвижимость.</h2>
         <div class="promo__social-panel social">
           <a class="social__link link social__link--youtube" href="#" aria-label="ссылка на Youtube">
@@ -96,30 +96,32 @@
             </svg>
           </a>
         </div>
-        <div class="promo__video-wrapper">
-          <p>Новое видео уже на YouTube</p>
-          <a class="link" aria-label="Смотреть видео">Смотреть видео</a>
-          <div class="promo__video">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-video-dt@1x.webp 1x, img/promo-video-dt@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/promo-video-dt@1x.jpg 1x, img/promo-video-dt@2x.jpg 2x">
-              <source type="image/webp" srcset="img/promo-video-mb@1x.webp 1x, img/promo-video-mb@2x.webp 2x">
-              <img src="img/promo-video-mb@1x.jpg" srcset="img/promo-video-mb@2x.jpg 2x" alt="Превью ролика на Youtube">
-            </picture>
-            <button type="button">
-              <span class="visually-hidden">Воспроизвести</span>
-            </button>
-          </div>
+      </div>
+      <div class="promo__video-wrapper">
+        <p>Новое видео уже на YouTube</p>
+        <a class="link" aria-label="Смотреть видео">Смотреть видео</a>
+        <div class="promo__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-video-dt@1x.webp 1x, img/promo-video-dt@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-video-dt@1x.jpg 1x, img/promo-video-dt@2x.jpg 2x">
+            <source type="image/webp" srcset="img/promo-video-mb@1x.webp 1x, img/promo-video-mb@2x.webp 2x">
+            <img src="img/promo-video-mb@1x.jpg" srcset="img/promo-video-mb@2x.jpg 2x" alt="Превью ролика на Youtube">
+          </picture>
+          <button type="button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
         </div>
       </div>
     </section>
     <section class="main__advantages advantages" id="advantages">
       <h2 class="visually-hidden">Отчет недели по работе инвесторов</h2>
       <div class="advantages__wrapper">
-        <p class="advantages__text-main">38 469 800 &#x20bd;</p>
-        <p class="advantages__text">
-          Заработали наши инвесторы на рынке недвижимости
-        </p>
+        <div class="advantages__text-dt">
+          <p class="advantages__text-main">38 469 800 &#x20bd;</p>
+          <p class="advantages__text">
+            Заработали наши инвесторы на рынке недвижимости
+          </p>
+        </div>
         <p class="advantages__period accent-color">
           Итоги недели <span>24.05.21 - 30.05.21</span>:
         </p>
@@ -301,7 +303,7 @@
               <span class="calculator__result-title">Ежемесячное начисление</span>
               <span class="calculator__result-sum">22 208 ₽ </span>
             </p>
-            <div>
+            <div class="calculator__result-wrapper">
               <p>
                 <span class="calculator__result-title">Доход</span>
                 <span class="calculator__result-text">13%</span>
@@ -311,8 +313,10 @@
                 <span class="calculator__result-text">316 500 &#x20bd;</span>
               </p>
             </div>
-            <a class="calculator__btn btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
-            <a class="calculator__feadback btn btn--transparent" aria-label="Получить консультацию">Получить консультацию</a>
+            <div class="calculator__btn-wrapper">
+              <a class="calculator__btn btn btn--accent" aria-label="Инвестировать">Инвестировать</a>
+              <a class="calculator__feadback btn btn--transparent" aria-label="Получить консультацию">Получить консультацию</a>
+            </div>
           </div>
         </div>
       </div>

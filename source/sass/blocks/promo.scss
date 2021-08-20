@@ -12,33 +12,48 @@
     max-width: 100%;
     min-height: 506px;
     background-image: url("../img/promo-dt.jpg");
-    background-position: bottom center;
+    background-position: top center;;
     background-size: cover;
   }
   @media (min-width: $desktop-width) {
     min-height: 806px;
-    background-position: top center;
     // background-size: cover;
   }
 }
 
-.promo__wrapper {
+.promo__wrapper-dt {
+  margin: 25px 23px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    margin: 88px 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 178px;
+  }
 
 }
 .promo__title {
   max-width: 500px;
-  margin: 25px 23px 0;
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
 
   @media (min-width: $tablet-width) {
-    max-width: 420px;
-    margin: 88px 60px 0;
-    padding-top: 35px;
+    max-width: 400px;
+    font-size: 32px;
+    line-height: 45px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 54%;
+    margin: 0;
     font-size: 72px;
     line-height: 89px;
   }
@@ -57,6 +72,11 @@
     right: 63px;
     left: unset;
   }
+  @media (min-width: $desktop-width) {
+    top: 12%;
+    right: 30px;
+  }
+
 }
 .promo__control {
   width: 17px;
@@ -93,14 +113,27 @@
   box-sizing: border-box;
   border-radius: 15px 15px 0 0;
   background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
-  backdrop-filter: blur(2.6px);
 
   @media (min-width: $tablet-width) {
     max-width: 390px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 622px;
+  }
+
   & a {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      position: absolute;
+      left: 6%;
+      bottom: 30%;
+      color: $black;
+      font-size: 15px;
+      line-height: 15px;
+    }
   }
 
   & p {
@@ -110,6 +143,7 @@
     font-size: 11px;
     font-weight: 600;
     line-height: 11px;
+    backdrop-filter: blur(2.6px);
 
     @media (min-width: $tablet-width) {
       padding: 37px 5px 29px 15px;
@@ -119,6 +153,7 @@
 
     @media (min-width: $desktop-width) {
       font-size: 22px;
+      padding: 55px 35px;
     }
   }
 }
