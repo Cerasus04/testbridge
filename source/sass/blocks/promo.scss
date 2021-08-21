@@ -74,7 +74,7 @@
   }
   @media (min-width: $desktop-width) {
     top: 12%;
-    right: 30px;
+    right: 4%;
   }
 
 }
@@ -178,9 +178,16 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 79px;
+      height: 68px;
+      left: -31px;
     }
   }
 }

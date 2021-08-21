@@ -10,6 +10,9 @@
   width: calc(100% - 30px);
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
   @media (min-width: $desktop-width) {
     width: calc(100% - 190px);
     max-width: 1350px;
@@ -86,6 +89,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    & p:first-child {
+      width: 48%;
+    }
+
+    & p:last-child {
+      width: 51%;
+    }
+  }
 }
 
 .calculator__btn-wrapper {
@@ -132,4 +145,7 @@
     font-size: 43px;
     line-height: 43px;
   }
+}
+.calculator__btn {
+  padding-top: 23px;
 }

@@ -7,6 +7,10 @@
     margin-bottom: 30px;
   }
 
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 40px);
+  }
+
   @media (min-width: $desktop-width) {
     width: calc(100% - 190px);
     max-width: 1350px;
@@ -19,7 +23,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 .options__container {
@@ -303,5 +307,10 @@
     width: 50%;
     align-self: flex-start;
     margin: 15px 0;
+
+    &::after {
+      top: 19px;
+      right: 14px;
+    }
   }
 }

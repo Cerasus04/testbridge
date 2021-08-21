@@ -22,6 +22,10 @@
 .page__header {
   width: calc(100% - 30px);
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
 }
 
 // .page__main {
@@ -32,4 +36,9 @@
 .page__footer {
   width: calc(100% - 30px);
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 90px);
+    max-width: 1346px;
+  }
 }

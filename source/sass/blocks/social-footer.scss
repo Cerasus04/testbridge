@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   width: calc(100% - 20px);
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 53%;
+  }
 }
 .social-footer__link {
   & svg {

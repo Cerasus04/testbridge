@@ -7,6 +7,19 @@
     @include title;
     margin: 0 0 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 190px);
+    max-width: 1350px;
+
+    & h2 {
+      margin-bottom: 80px;
+    }
+  }
 }
 .steps__list {
   display: flex;
@@ -49,6 +62,11 @@
       line-height: 22px;
     }
 
+    @media (min-width: $desktop-width) {
+      max-width: 176px;
+      min-height: 207px;
+    }
+
     &::before {
       counter-increment: myCounter;
       content: counter(myCounter);
@@ -70,6 +88,13 @@
         top: 25%;
         left: 44%;
       }
+
+      @media (min-width: $desktop-width) {
+        font-size: 60px;
+        line-height: 60px;
+        top: 9%;
+        left: 34%;
+      }
     }
 
     &::after {
@@ -85,17 +110,23 @@
       background-size: contain;
 
       @media (min-width: $tablet-width) {
-        bottom: 39%;
-        left: 63px;
+        top: 26%;
+        bottom: unset;
+        left: unset;
+        right: -15%;
+        transform: rotate(-90deg);
+      }
+
+      @media (min-width: $desktop-width) {
+        height: 46px;
+        width: 26px;
+        top: 18%;
+        right: -24%;
       }
     }
 
     &:last-of-type::after {
       content: none;
-
-      @media (min-width: $tablet-width) {
-        content: "";
-      }
     }
   }
 
@@ -122,12 +153,26 @@
         left: 40px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        width: 150px;
+        height:150px;
+        top: unset;
+        bottom: 127%;
+        left: 0;
+      }
+    }
   }
 }
 .steps__btn-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     width: 80%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 56%;
   }
 }
 .steps__btn,
@@ -149,6 +194,9 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
+  @media (min-width: $desktop-width) {
+    padding: 23px;
+  }
 }
 
 .steps__btn {
@@ -166,6 +214,14 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px;
+
+    &:after {
+      top: 27px;
+    }
   }
 }
 
