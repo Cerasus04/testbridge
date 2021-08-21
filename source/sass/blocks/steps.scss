@@ -217,10 +217,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
     padding: 23px;
 
     &:after {
-      top: 27px;
+      top: 43%;
     }
   }
 }

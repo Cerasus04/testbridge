@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 50%;
+    bottom: -90%;
     left: 8%;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: unset;
+    bottom: unset;
     left: unset;
   }
 }
@@ -33,5 +33,14 @@
     & svg {
       fill: red;
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

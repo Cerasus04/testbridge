@@ -22,15 +22,16 @@
 }
 
 .promo__wrapper-dt {
+  position: relative;
   margin: 25px 23px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
-    margin: 88px 60px 0;
+    margin: 88px 120px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 92%;
     max-width: 1350px;
     margin: 0 auto;
     display: flex;
@@ -68,13 +69,13 @@
   width: 86px;
 
   @media (min-width: $tablet-width) {
-    top: 31px;
+    top: -56px;
     right: 63px;
     left: unset;
   }
   @media (min-width: $desktop-width) {
-    top: 12%;
-    right: 4%;
+    top: 16%;
+    right: 0;
   }
 
 }
