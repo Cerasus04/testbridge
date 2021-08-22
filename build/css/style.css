@@ -2840,7 +2840,8 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: calc(100% - 20px); }
+  width: calc(100% - 20px);
+  max-width: 320px; }
   @media (min-width: 1200px) {
     .social-footer {
       -webkit-box-pack: justify;
