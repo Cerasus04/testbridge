@@ -35,10 +35,6 @@
     align-items: flex-start;
   }
 }
-.footer__logo {
-}
-.footer__social {
-}
 
 .footer__contacts-phone {
   font-size: 20px;
@@ -220,6 +216,7 @@
   border: none;
   border-radius: 40px;
   background-color: $bg-wrap;
+  outline: none;
 
   &::placeholder {
     color: $btn-transparrent;

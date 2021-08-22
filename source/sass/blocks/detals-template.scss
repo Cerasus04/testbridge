@@ -1,0 +1,7 @@
+.detals-template {
+  display: none;
+
+  &--show {
+    display: flex;
+  }
+}

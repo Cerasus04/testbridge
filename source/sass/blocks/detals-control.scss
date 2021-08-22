@@ -1,5 +1,7 @@
 .detals-control {
-
+  &--hidden {
+    display: none;
+  }
 }
 .detals-control__income {
   width: 35%;
@@ -15,7 +17,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50px repeat(4, 60px);
-    column-gap: 10px;
+    justify-content: space-between;
     width: 100%;
     max-width: 335px;
     margin: 0 auto;
@@ -42,7 +44,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50px repeat(4, 60px);
-    column-gap: 10px;
+    justify-content: space-between;
     max-width: 335px;
     width: 100%;
     margin: 0 auto;

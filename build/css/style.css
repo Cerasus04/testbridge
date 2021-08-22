@@ -302,6 +302,53 @@ button {
 .header__item {
   margin-right: 37px; }
 
+.header__nav--opened {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #181818; }
+  .header__nav--opened.header__nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    min-height: 15%;
+    padding: 50px 30px 24px;
+    font-size: 12px; }
+    @media (min-width: 768px) {
+      .header__nav--opened.header__nav {
+        height: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        padding: 15px 30px; } }
+  .header__nav--opened .header__item {
+    margin-right: 0;
+    margin-bottom: 15px; }
+    @media (min-width: 768px) {
+      .header__nav--opened .header__item {
+        margin-right: 15px; } }
+
 .header__btn {
   display: none; }
   @media (min-width: 1200px) {
@@ -317,13 +364,32 @@ button {
       color: #FF970A; } }
 
 .header__btn-mb {
-  display: block;
-  width: 33px;
-  height: 11px;
-  background-image: url("../img/icon-btn-mb.svg");
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-color: transparent; }
+  .header__btn-mb--burger {
+    display: block;
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-btn-mb.svg"); }
+    @media (min-width: 1200px) {
+      .header__btn-mb--burger {
+        display: none; } }
+  .header__btn-mb--closed {
+    position: absolute;
+    top: 21px;
+    right: 5%;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-closed.svg");
+    z-index: 100; }
+  @media (min-width: 768px) {
+    .header__btn-mb {
+      top: 21px;
+      right: 0; } }
   @media (min-width: 1200px) {
     .header__btn-mb {
       display: none; } }
@@ -810,9 +876,6 @@ button {
       margin: 0 32px; } }
 
 .options__detals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -848,6 +911,12 @@ button {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+  .options__detals--hide {
+    display: none; }
+  .options__detals--show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .options__list {
   padding-top: 25px; }
@@ -871,7 +940,8 @@ button {
   font-weight: 400;
   line-height: 12px;
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
-  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%); }
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+  cursor: pointer; }
   @media (min-width: 768px) {
     .options__item {
       display: block;
@@ -1016,6 +1086,9 @@ button {
         top: 19px;
         right: 14px; } }
 
+.detals-control--hidden {
+  display: none; }
+
 .detals-control__income {
   width: 35%;
   display: -webkit-box;
@@ -1037,9 +1110,9 @@ button {
     .detals-control__income {
       display: grid;
       grid-template-columns: 50px repeat(4, 60px);
-      -webkit-column-gap: 10px;
-         -moz-column-gap: 10px;
-              column-gap: 10px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       width: 100%;
       max-width: 335px;
       margin: 0 auto; } }
@@ -1070,9 +1143,9 @@ button {
     .detals-control__contribution {
       display: grid;
       grid-template-columns: 50px repeat(4, 60px);
-      -webkit-column-gap: 10px;
-         -moz-column-gap: 10px;
-              column-gap: 10px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       max-width: 335px;
       width: 100%;
       margin: 0 auto; } }
@@ -1133,6 +1206,9 @@ button {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px; }
+
+.detals-deal--hidden {
+  display: none; }
 
 .detals-deal p {
   min-height: 50px;
@@ -1335,9 +1411,6 @@ button {
       margin: 0 32px; } }
 
 .options__detals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1373,6 +1446,12 @@ button {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+  .options__detals--hide {
+    display: none; }
+  .options__detals--show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .options__list {
   padding-top: 25px; }
@@ -1396,7 +1475,8 @@ button {
   font-weight: 400;
   line-height: 12px;
   background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(rgba(20, 20, 20, 0)));
-  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%); }
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+  cursor: pointer; }
   @media (min-width: 768px) {
     .options__item {
       display: block;
@@ -2611,7 +2691,8 @@ button {
   color: #FFFFFF;
   border: none;
   border-radius: 40px;
-  background-color: #181818; }
+  background-color: #181818;
+  outline: none; }
   .footer__row input::-webkit-input-placeholder {
     color: #A1A1A1; }
   .footer__row input::-moz-placeholder {
@@ -2660,4 +2741,7 @@ button {
       width: 53%; } }
 
 .social-footer__link svg {
+  fill: #2C2C2C; }
+
+.social-footer__link:hover svg, .social-footer__link:focus svg {
   fill: #FFFFFF; }

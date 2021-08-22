@@ -1,4 +1,8 @@
 .detals-deal {
+  &--hidden {
+    display: none;
+  }
+
   & p {
     min-height: 50px;
     display: flex;
