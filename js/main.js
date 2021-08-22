@@ -126,28 +126,6 @@
 'use strict';
 
 (function () {
-  const radioList = document.querySelector('.radio__list');
-  const listItem = radioList.querySelectorAll('.radio__list-item');
-
-
-  listItem.forEach(item => {
-    item.addEventListener('click', () => {
-      for (let i = 0; i < listItem.length; i++) {
-        if (listItem.classList.contains('radio__list-item--active')) {
-          listItem.classList.remove('radio__list-item--active');
-        } else {
-          listItem.classList.add('radio__list-item--active');
-        }
-      }
-   });
-  });
-
-
-})();
-
-'use strict';
-
-(function () {
   const slides = document.querySelectorAll('.review__wrapper');
   const next = document.querySelector('.review__btn-mb');
 
