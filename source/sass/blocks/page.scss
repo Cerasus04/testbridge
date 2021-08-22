@@ -14,7 +14,6 @@
   color: $white;
   background-color: $black;
 
-
   @media (min-width: $tablet-width) {
     font-size: 15px;
   }
@@ -28,11 +27,6 @@
     width: calc(100% - 60px);
   }
 }
-
-// .page__main {
-//   width: calc(100% - 30px);
-//   margin: 0 auto;
-// }
 
 .page__footer {
   width: calc(100% - 30px);

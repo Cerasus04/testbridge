@@ -55,6 +55,7 @@
   @media (min-width: $mobile-width-max) {
     height: 60%;
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -99,6 +100,7 @@
     flex-direction: column;
     width: 28%;
   }
+
   @media (min-width: $desktop-width) {
     border-radius: 18px;
     width: 32%;
@@ -116,6 +118,7 @@
       border-radius: 18px;
     }
   }
+
   &--current {
     display: flex;
     flex-direction: column;
@@ -148,6 +151,7 @@
       top: 32%;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -216,6 +220,7 @@
     bottom: 20%;
   }
 }
+
 .review__title {
   padding: 8px 9px 12px;
   margin: 0;
@@ -300,6 +305,7 @@
 }
 
 .review__guarantees-wrapper {
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

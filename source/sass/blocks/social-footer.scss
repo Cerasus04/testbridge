@@ -9,12 +9,14 @@
   }
 }
 .social-footer__link {
+
   & svg {
     fill: #2C2C2C;
   }
 
   &:hover,
   &:focus {
+
     & svg {
       fill: $white;
     }

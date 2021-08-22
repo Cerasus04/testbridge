@@ -126,6 +126,60 @@
 'use strict';
 
 (function () {
+  const radioList = document.querySelector('.radio__list');
+  const listItem = radioList.querySelectorAll('.radio__list-item');
+
+
+  listItem.forEach(item => {
+    item.addEventListener('click', () => {
+      for (let i = 0; i < listItem.length; i++) {
+        if (listItem.classList.contains('radio__list-item--active')) {
+          listItem.classList.remove('radio__list-item--active');
+        } else {
+          listItem.classList.add('radio__list-item--active');
+        }
+      }
+   });
+  });
+
+
+})();
+
+'use strict';
+
+(function () {
+  const slides = document.querySelectorAll('.review__wrapper');
+  const next = document.querySelector('.review__btn-mb');
+
+  let slideIndex = 1;
+
+  showSlides(slideIndex);
+
+  function showSlides(n) {
+    if(n > slides.length) {
+      slideIndex =1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    slides.forEach(item => item.classList.remove('review__wrapper--current'));
+
+    slides[slideIndex - 1].classList.add('review__wrapper--current');
+
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  next.addEventListener('click', () => plusSlides(1));
+})();
+
+'use strict';
+
+(function () {
   function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass, contentActiveClass, contentHideClass) {
     const tabs = document.querySelectorAll(tabsSelector),
           tabsContent = document.querySelectorAll(tabsContentSelector),
@@ -167,4 +221,5 @@
 
   tabs('.options__list1-item', '.options__detals1', '.options__list1', 'options__list1-item--active', 'options__detals1--show', 'options__detals1--hide');
   tabs('.options__list2-item', '.options__detals2', '.options__list2', 'options__list2-item--active', 'options__detals2--show', 'options__detals2--hide');
+  tabs('.options__control', '.options__container', '.options__controls',  'options__control--active', 'options__container--active', 'options__container--disabled');
 })();

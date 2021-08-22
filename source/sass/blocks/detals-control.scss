@@ -23,8 +23,7 @@
     grid-template-columns: 50px repeat(4, 78px);
   }
 }
-.detals-control__percent {
-}
+
 .detals-control__contribution {
   width: 60%;
   display: flex;
@@ -50,6 +49,7 @@
     grid-template-columns: 50px repeat(4, 78px);
   }
 }
+
 .detals-control__text {
   min-height: 50px;
   font-size: 14px;
@@ -85,6 +85,7 @@
     }
   }
 }
+
 .detals-control__percent {
   font-size: 27px;
   font-weight: 900;

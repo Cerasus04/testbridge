@@ -16,6 +16,7 @@
     max-width: 1350px;
   }
 }
+
 .options__wrapper {
   position: relative;
   min-height: 285px;
@@ -26,12 +27,23 @@
     justify-content: space-between;
   }
 }
+
 .options__container {
-  display: none;
   padding-bottom: 1px;
 
   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   border-radius: 0 20px 20px 20px;
+
+  @media (max-width: $tablet-width) {
+    &--disabled {
+      display: none;
+    }
+
+    &--active {
+      display: block;
+      background-color: $bg-wrap;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -77,12 +89,6 @@
       margin-bottom: 0;
     }
   }
-
-  &--active {
-    display: block;
-    background-color: $bg-wrap;
-
-  }
 }
 
 .options__chapter {
@@ -97,12 +103,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 32px;
+    margin: 0 24px;
   }
 }
+
 .options__detals1,
 .options__detals2 {
-  justify-content: space-between;
   column-gap: 15px;
   padding: 0 27px 60px 17px;
   background: $black;
@@ -121,6 +127,8 @@
 }
 
 .options__detals1 {
+  justify-content: space-between;
+
   &--hide {
     display: none;
   }
@@ -131,6 +139,8 @@
 }
 
 .options__detals2 {
+  justify-content: space-evenly;
+
   @media (min-width: $tablet-width) {
     &--deal {
       flex-direction: row;
@@ -169,6 +179,15 @@
     border-radius: 20px;
   }
 }
+
+.options__list2:hover .options__list2-item {
+  display: block;
+}
+
+.options__list1:hover .options__list1-item {
+  display: block;
+}
+
 .options__list1-item,
 .options__list2-item  {
   display: none;
@@ -180,7 +199,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 13px 4px;
+    padding: 13px 7px;
     font-size: 12px;
     line-height: 15px;
     background: none;
@@ -191,41 +210,6 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
   }
-
-  // &--active {
-  //   position: relative;
-  //   display: block;
-  //   color: $accent;
-  //   border: 1.5px solid $accent;
-  //   border-radius: 41px;
-  //   background-color: $bg-wrap;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     right: 19px;
-  //     top: 16px;
-  //     width: 11px;
-  //     height: 9px;
-  //     background-image: url("../img/icon-arrow-bottom.svg");
-  //     background-repeat: no-repeat;
-  //     background-position: top center;
-  //     background-size: contain;
-
-  //     @media (min-width: $tablet-width) {
-  //       content: none;
-  //     }
-  //   }
-
-  //   @media (min-width: $tablet-width) {
-  //     background-color: $black;
-  //   }
-  // }
-
-  // &:hover,
-  // &:focus {
-  //   background-color: $accent;
-  // }
 }
 
 .options__list1-item {
@@ -343,6 +327,7 @@
 }
 
 .options__title-mb {
+
   @media (min-width: $desktop-width) {
     display: none;
   }

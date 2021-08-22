@@ -42,4 +42,5 @@
 
   tabs('.options__list1-item', '.options__detals1', '.options__list1', 'options__list1-item--active', 'options__detals1--show', 'options__detals1--hide');
   tabs('.options__list2-item', '.options__detals2', '.options__list2', 'options__list2-item--active', 'options__detals2--show', 'options__detals2--hide');
+  tabs('.options__control', '.options__container', '.options__controls',  'options__control--active', 'options__container--active', 'options__container--disabled');
 })();

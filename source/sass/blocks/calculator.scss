@@ -1,11 +1,11 @@
 .calculator {
-
   padding: 23px 0 33px;
 
   & h2 {
     @include title;
   }
 }
+
 .calculator__container {
   width: calc(100% - 30px);
   margin: 0 auto;
@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
   }
+
   @media (min-width: $desktop-width) {
     width: calc(100% - 190px);
     max-width: 1350px;
@@ -45,7 +46,6 @@
   margin-top: 25px;
   border-radius: 18px;
   background-color: $black;
-
 
   @media (min-width: $mobile-width-max) {
     align-items: center;
@@ -146,6 +146,7 @@
     line-height: 43px;
   }
 }
+
 .calculator__btn {
   padding-top: 23px;
 }

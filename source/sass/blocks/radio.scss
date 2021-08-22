@@ -9,6 +9,7 @@
     flex-direction: column;
   }
 }
+
 .radio__wrapper {
   & p {
     font-weight: 400;
@@ -28,6 +29,7 @@
       line-height: 18px;
     }
   }
+
   @media (min-width: $mobile-width-max) {
     width: 50%;
   }
@@ -36,11 +38,13 @@
     width: 100%;
   }
 }
+
 .radio__list {
   display: flex;
   background-color: $black;
   border-radius: 21px;
 }
+
 .radio__list-item {
   width: 50%;
   padding: 13px 5px;
@@ -54,6 +58,7 @@
     border-radius: 21px;
   }
 }
+
 .radio__meaning {
   font-weight: 500;
   line-height: 12px;

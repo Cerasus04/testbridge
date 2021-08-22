@@ -30,11 +30,13 @@
     line-height: 18px;
   }
 }
+
 .range-slider__input-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
+
 .range-slider__result {
   display: block;
   box-sizing: border-box;
@@ -52,12 +54,15 @@
     line-height: 22px;
   }
 }
+
 .range-slider__progress {
   width: 100%;
 }
+
 .range-slider__controls {
   position: relative;
 }
+
 .range-slider__scale {
   position: relative;
   top: -2px;
@@ -69,6 +74,7 @@
     width: 161px;
   }
 }
+
 .range-slider__max {
   position: absolute;
   top: -5px;

@@ -21,6 +21,7 @@
     }
   }
 }
+
 .steps__list {
   display: flex;
   flex-direction: column;
@@ -165,6 +166,7 @@
     }
   }
 }
+
 .steps__btn-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -175,6 +177,7 @@
     width: 56%;
   }
 }
+
 .steps__btn,
 .steps__feadback {
   display: block;
