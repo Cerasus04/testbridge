@@ -1345,6 +1345,13 @@ button {
 .detals-deal__text {
   margin-top: 13px; }
 
+.detals-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 40px;
+  text-align: center; }
+
 .options {
   width: calc(100% - 30px);
   margin: 0 auto 37px; }

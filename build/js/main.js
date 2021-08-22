@@ -1,21 +1,21 @@
-// 'use strict';
+'use strict';
 
-// (function () {
-//   const anchors = document.querySelectorAll('a[href*="#"]');
+(function () {
+  const anchors = document.querySelectorAll('a[href*="#"]');
 
-//   for (let anchor of anchors) {
-//     anchor.addEventListener('click', (evt) => {
-//       evt.preventDefault();
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', (evt) => {
+      evt.preventDefault();
 
-//       const blockID = anchor.getAttribute('href').substr(1);
+      const blockID = anchor.getAttribute('href').substr(1);
 
-//       document.getElementById(blockID).scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start'
-//       });
-//     });
-//   }
-// })();
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
+})();
 
 'use strict';
 

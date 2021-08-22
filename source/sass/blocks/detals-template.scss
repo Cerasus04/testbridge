@@ -1,7 +1,5 @@
 .detals-template {
-  display: none;
-
-  &--show {
-    display: flex;
-  }
+  display: flex;
+  padding: 30px 40px;
+  text-align: center;
 }
