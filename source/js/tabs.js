@@ -1,15 +1,15 @@
 'use strict';
 
 (function () {
-  function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
+  function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass, contentActiveClass, contentHideClass) {
     const tabs = document.querySelectorAll(tabsSelector),
           tabsContent = document.querySelectorAll(tabsContentSelector),
           tabsParent = document.querySelector(tabsParentSelector);
 
     function hideTabContent() {
       tabsContent.forEach(item => {
-        item.classList.add('options__detals--hide');
-        item.classList.remove('options__detals--show');
+        item.classList.add(contentHideClass);
+        item.classList.remove(contentActiveClass);
       });
 
       tabs.forEach(item => {
@@ -18,8 +18,8 @@
     }
 
     function showTabContent(i = 0) {
-      tabsContent[i].classList.add('options__detals--show');
-      tabsContent[i].classList.remove('options__detals--hide');
+      tabsContent[i].classList.add(contentActiveClass);
+      tabsContent[i].classList.remove(contentHideClass);
       tabs[i].classList.add(activeClass);
     }
 
@@ -40,5 +40,6 @@
     });
   }
 
-  tabs('.options__item', '.options__detals', '.options__list', 'options__item--active');
+  tabs('.options__list1-item', '.options__detals1', '.options__list1', 'options__list1-item--active', 'options__detals1--show', 'options__detals1--hide');
+  tabs('.options__list2-item', '.options__detals2', '.options__list2', 'options__list2-item--active', 'options__detals2--show', 'options__detals2--hide');
 })();
